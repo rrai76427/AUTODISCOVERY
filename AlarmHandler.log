@@ -1,0 +1,374 @@
+2024-08-02T11:03:13.848+05:30  INFO 14023 --- [pool-3-thread-21] com.crl.nms.service.DbHandlerService     : neKey11001_20_37
+2024-08-02T11:03:13.938+05:30  INFO 14023 --- [pool-3-thread-6] com.crl.nms.service.DbHandlerService     : neKey11001_20_37
+2024-08-02T11:03:13.939+05:30  INFO 14023 --- [pool-3-thread-28] com.crl.nms.service.DbHandlerService     : neKey11001_20_37
+2024-08-02T11:03:14.007+05:30  INFO 14023 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:03:14.117+05:30  INFO 14023 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T11:03:14.177+05:30  INFO 14023 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-02T11:03:31.055+05:30  INFO 25006 --- [main] com.crl.nms.Main                         : Starting Main using Java 21.0.3 with PID 25006 (/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY/target/classes started by crl in /home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY)
+2024-08-02T11:03:31.055+05:30  INFO 25006 --- [main] com.crl.nms.Main                         : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T11:03:31.993+05:30  INFO 25006 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T11:03:32.070+05:30  INFO 25006 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 46 JPA repository interfaces.
+2024-08-02T11:03:32.810+05:30  INFO 25006 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9008 (http)
+2024-08-02T11:03:32.815+05:30  INFO 25006 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T11:03:32.816+05:30  INFO 25006 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2024-08-02T11:03:32.921+05:30  INFO 25006 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T11:03:32.922+05:30  INFO 25006 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1837 ms
+2024-08-02T11:03:33.079+05:30  WARN 25006 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-08-02T11:03:33.079+05:30  INFO 25006 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T11:03:33.173+05:30  INFO 25006 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7197b07f
+2024-08-02T11:03:33.174+05:30  INFO 25006 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T11:03:33.194+05:30  INFO 25006 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T11:03:33.261+05:30  INFO 25006 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-08-02T11:03:33.262+05:30  INFO 25006 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-08-02T11:03:33.399+05:30  INFO 25006 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:03:33.488+05:30  INFO 25006 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T11:03:33.811+05:30  INFO 25006 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:03:34.390+05:30  INFO 25006 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02T11:03:34.902+05:30  INFO 25006 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:03:35.130+05:30  INFO 25006 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-02T11:03:35.599+05:30  WARN 25006 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T11:03:36.155+05:30  WARN 25006 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 513b8226-9f20-4f41-a5ea-2623e7505959
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-02T11:03:36.271+05:30  INFO 25006 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5618b26b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ff56e7, org.springframework.security.web.context.SecurityContextHolderFilter@16df17e6, org.springframework.security.web.header.HeaderWriterFilter@3ebb8383, org.springframework.security.web.csrf.CsrfFilter@4b453c61, org.springframework.security.web.authentication.logout.LogoutFilter@69ca48bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@685d620a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79155a9d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12c9803d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ca16621, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@214c51eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44c66c7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36004275, org.springframework.security.web.access.ExceptionTranslationFilter@30b3d9ef, org.springframework.security.web.access.intercept.AuthorizationFilter@7647d789]
+2024-08-02T11:03:36.288+05:30  INFO 25006 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9008 (http) with context path ''
+2024-08-02T11:03:36.292+05:30  INFO 25006 --- [main] com.crl.nms.Main                         : Started Main in 5.693 seconds (process running for 11.959)
+2024-08-02T11:03:36.305+05:30  INFO 25006 --- [pool-2-thread-1] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-1
+2024-08-02T11:03:36.305+05:30  INFO 25006 --- [pool-2-thread-2] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-2
+2024-08-02T11:03:36.305+05:30  INFO 25006 --- [pool-2-thread-3] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-3
+2024-08-02T11:03:36.306+05:30  INFO 25006 --- [pool-2-thread-4] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-4
+2024-08-02T11:03:36.306+05:30  INFO 25006 --- [pool-2-thread-5] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-5
+2024-08-02T11:03:36.306+05:30  INFO 25006 --- [pool-2-thread-7] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-7
+2024-08-02T11:03:36.306+05:30  INFO 25006 --- [pool-2-thread-6] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-6
+2024-08-02T11:03:36.306+05:30  INFO 25006 --- [pool-2-thread-8] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-8
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-9] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-9
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-11] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-11
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-10] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-10
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-12] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-12
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-13] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-13
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-14] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-14
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-15] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-15
+2024-08-02T11:03:36.309+05:30  INFO 25006 --- [pool-2-thread-16] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-16
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-17] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-17
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-18] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-18
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-19] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-19
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-20] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-20
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-21] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-21
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-22] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-22
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-23] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-23
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-24] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-24
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-25] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-25
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-26] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-26
+2024-08-02T11:03:36.310+05:30  INFO 25006 --- [pool-2-thread-27] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-27
+2024-08-02T11:03:36.406+05:30  INFO 25006 --- [pool-3-thread-1] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-1
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-7] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-7
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-9] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-9
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-2] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-2
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-4] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-4
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-3] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-3
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-17] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-17
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-6] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-6
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-5] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-5
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-10] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-10
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-11] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-11
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-13] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-13
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-12] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-12
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-14] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-14
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-15] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-15
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-16] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-16
+2024-08-02T11:03:36.407+05:30  INFO 25006 --- [pool-3-thread-8] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-8
+2024-08-02T11:03:36.408+05:30  INFO 25006 --- [pool-3-thread-18] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-18
+2024-08-02T11:03:36.408+05:30  INFO 25006 --- [pool-3-thread-19] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-19
+2024-08-02T11:03:36.408+05:30  INFO 25006 --- [pool-3-thread-20] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-20
+2024-08-02T11:03:36.408+05:30  INFO 25006 --- [pool-3-thread-21] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-21
+2024-08-02T11:03:36.408+05:30  INFO 25006 --- [pool-3-thread-22] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-22
+2024-08-02T11:03:36.418+05:30  INFO 25006 --- [pool-3-thread-23] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-23
+2024-08-02T11:16:04.765+05:30  WARN 25006 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m31s491ms9µs466ns).
+2024-08-02T11:16:04.801+05:30  INFO 25006 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:16:04.802+05:30  INFO 25006 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T11:16:04.803+05:30  INFO 25006 --- [pool-3-thread-21] c.c.n.service.NeDetailPollThreadService  : NePollingThread checkChangeInAliveHosts=Error creating bean with name 'dataSourceScriptDatabaseInitializer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2024-08-02T11:16:04.813+05:30  INFO 25006 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-02T11:16:07.980+05:30  INFO 25513 --- [main] com.crl.nms.Main                         : Starting Main using Java 21.0.3 with PID 25513 (/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY/target/classes started by crl in /home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY)
+2024-08-02T11:16:07.981+05:30  INFO 25513 --- [main] com.crl.nms.Main                         : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T11:16:08.324+05:30  INFO 25513 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T11:16:08.383+05:30  INFO 25513 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 46 JPA repository interfaces.
+2024-08-02T11:16:08.712+05:30  INFO 25513 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9008 (http)
+2024-08-02T11:16:08.717+05:30  INFO 25513 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T11:16:08.717+05:30  INFO 25513 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2024-08-02T11:16:08.757+05:30  INFO 25513 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T11:16:08.758+05:30  INFO 25513 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-08-02T11:16:08.840+05:30  WARN 25513 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-08-02T11:16:08.841+05:30  INFO 25513 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T11:16:08.884+05:30  INFO 25513 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30a7653e
+2024-08-02T11:16:08.885+05:30  INFO 25513 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T11:16:08.902+05:30  INFO 25513 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T11:16:08.921+05:30  INFO 25513 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-08-02T11:16:08.923+05:30  INFO 25513 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-08-02T11:16:09.009+05:30  INFO 25513 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:16:09.070+05:30  INFO 25513 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T11:16:09.274+05:30  INFO 25513 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:16:09.745+05:30  INFO 25513 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02T11:16:09.998+05:30  INFO 25513 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:16:10.161+05:30  INFO 25513 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-02T11:16:10.477+05:30  WARN 25513 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T11:16:10.918+05:30  WARN 25513 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: be8cc3b6-6821-48ad-bd0a-aa683730ea72
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-02T11:16:10.957+05:30  INFO 25513 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@209db88a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@143a4506, org.springframework.security.web.context.SecurityContextHolderFilter@44c66c7b, org.springframework.security.web.header.HeaderWriterFilter@4cbeae45, org.springframework.security.web.csrf.CsrfFilter@28d1e59d, org.springframework.security.web.authentication.logout.LogoutFilter@427b8fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2cc112a5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cbe4472, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@706ff320, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@36004275, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@582679fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12973dd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@567a2954, org.springframework.security.web.access.ExceptionTranslationFilter@749a3925, org.springframework.security.web.access.intercept.AuthorizationFilter@7d1f3f67]
+2024-08-02T11:16:10.975+05:30  INFO 25513 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9008 (http) with context path ''
+2024-08-02T11:16:10.979+05:30  INFO 25513 --- [main] com.crl.nms.Main                         : Started Main in 3.212 seconds (process running for 3.431)
+2024-08-02T11:16:10.995+05:30  INFO 25513 --- [pool-2-thread-3] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-3
+2024-08-02T11:16:10.995+05:30  INFO 25513 --- [pool-2-thread-1] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-1
+2024-08-02T11:16:10.995+05:30  INFO 25513 --- [pool-2-thread-4] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-4
+2024-08-02T11:16:10.995+05:30  INFO 25513 --- [pool-2-thread-2] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-2
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-6] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-6
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-5] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-5
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-7] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-7
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-9] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-9
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-8] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-8
+2024-08-02T11:16:10.998+05:30  INFO 25513 --- [pool-2-thread-10] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-10
+2024-08-02T11:16:10.999+05:30  INFO 25513 --- [pool-2-thread-11] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-11
+2024-08-02T11:16:10.999+05:30  INFO 25513 --- [pool-2-thread-12] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-12
+2024-08-02T11:16:10.999+05:30  INFO 25513 --- [pool-2-thread-13] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-13
+2024-08-02T11:16:11.000+05:30  INFO 25513 --- [pool-2-thread-14] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-14
+2024-08-02T11:16:11.000+05:30  INFO 25513 --- [pool-2-thread-15] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-15
+2024-08-02T11:16:11.000+05:30  INFO 25513 --- [pool-2-thread-16] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-16
+2024-08-02T11:16:11.001+05:30  INFO 25513 --- [pool-2-thread-17] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-17
+2024-08-02T11:16:11.001+05:30  INFO 25513 --- [pool-2-thread-18] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-18
+2024-08-02T11:16:11.001+05:30  INFO 25513 --- [pool-2-thread-19] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-19
+2024-08-02T11:16:11.001+05:30  INFO 25513 --- [pool-2-thread-20] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-20
+2024-08-02T11:16:11.001+05:30  INFO 25513 --- [pool-2-thread-21] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-21
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-22] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-22
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-23] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-23
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-24] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-24
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-25] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-25
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-26] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-26
+2024-08-02T11:16:11.002+05:30  INFO 25513 --- [pool-2-thread-27] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-27
+2024-08-02T11:16:11.009+05:30  INFO 25513 --- [pool-3-thread-3] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-3
+2024-08-02T11:16:11.009+05:30  INFO 25513 --- [pool-3-thread-1] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-1
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-2] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-2
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-4] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-4
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-5] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-5
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-6] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-6
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-7] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-7
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-8] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-8
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-9] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-9
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-10] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-10
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-12] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-12
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-15] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-15
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-13] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-13
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-11] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-11
+2024-08-02T11:16:11.013+05:30  INFO 25513 --- [pool-3-thread-14] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-14
+2024-08-02T11:16:11.014+05:30  INFO 25513 --- [pool-3-thread-17] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-17
+2024-08-02T11:16:11.014+05:30  INFO 25513 --- [pool-3-thread-16] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-16
+2024-08-02T11:16:11.014+05:30  INFO 25513 --- [pool-3-thread-18] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-18
+2024-08-02T11:16:11.014+05:30  INFO 25513 --- [pool-3-thread-19] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-19
+2024-08-02T11:16:11.025+05:30  INFO 25513 --- [pool-3-thread-21] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-21
+2024-08-02T11:16:11.025+05:30  INFO 25513 --- [pool-3-thread-20] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-20
+2024-08-02T11:16:11.045+05:30  INFO 25513 --- [pool-3-thread-22] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-22
+2024-08-02T11:16:11.061+05:30  INFO 25513 --- [pool-3-thread-23] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-23
+2024-08-02T11:18:23.508+05:30  WARN 25513 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m14s523ms158µs934ns).
+2024-08-02T11:19:23.875+05:30  WARN 25513 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m367ms61µs716ns).
+2024-08-02T11:20:18.316+05:30  WARN 25513 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s441ms245µs415ns).
+2024-08-02T11:20:18.321+05:30  WARN 25513 --- [pool-3-thread-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2024-08-02T11:20:18.321+05:30  WARN 25513 --- [pool-3-thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2024-08-02T11:20:18.321+05:30  WARN 25513 --- [pool-3-thread-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2024-08-02T11:20:18.321+05:30 ERROR 25513 --- [pool-3-thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 50784ms.
+2024-08-02T11:20:18.321+05:30 ERROR 25513 --- [pool-3-thread-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 50784ms.
+2024-08-02T11:20:18.321+05:30 ERROR 25513 --- [pool-3-thread-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 50784ms.
+2024-08-02T11:20:18.325+05:30  INFO 25513 --- [pool-3-thread-15] c.c.n.service.NeDetailPollThreadService  : NePollingThread checkChangeInAliveHosts=Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 50784ms.] [n/a]
+2024-08-02T11:20:18.325+05:30  INFO 25513 --- [pool-3-thread-3] c.c.n.service.NeDetailPollThreadService  : NePollingThread checkChangeInAliveHosts=Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 50784ms.] [n/a]
+2024-08-02T11:20:18.325+05:30  INFO 25513 --- [pool-3-thread-5] c.c.n.service.NeDetailPollThreadService  : NePollingThread checkChangeInAliveHosts=Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 50784ms.] [n/a]
+2024-08-02T11:20:18.354+05:30  INFO 25513 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:20:18.355+05:30  INFO 25513 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T11:20:18.359+05:30  INFO 25513 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-02T11:20:19.574+05:30  INFO 25857 --- [main] com.crl.nms.Main                         : Starting Main using Java 21.0.3 with PID 25857 (/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY/target/classes started by crl in /home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY)
+2024-08-02T11:20:19.575+05:30  INFO 25857 --- [main] com.crl.nms.Main                         : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T11:20:19.898+05:30  INFO 25857 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T11:20:19.967+05:30  INFO 25857 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 46 JPA repository interfaces.
+2024-08-02T11:20:20.322+05:30  INFO 25857 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9008 (http)
+2024-08-02T11:20:20.326+05:30  INFO 25857 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T11:20:20.327+05:30  INFO 25857 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2024-08-02T11:20:20.362+05:30  INFO 25857 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T11:20:20.362+05:30  INFO 25857 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2024-08-02T11:20:20.424+05:30  WARN 25857 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-08-02T11:20:20.424+05:30  INFO 25857 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T11:20:20.477+05:30  INFO 25857 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c46c9c3
+2024-08-02T11:20:20.478+05:30  INFO 25857 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T11:20:20.494+05:30  INFO 25857 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T11:20:20.510+05:30  INFO 25857 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-08-02T11:20:20.511+05:30  INFO 25857 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-08-02T11:20:20.583+05:30  INFO 25857 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:20:20.668+05:30  INFO 25857 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T11:20:20.876+05:30  INFO 25857 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:20:21.331+05:30  INFO 25857 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02T11:20:21.580+05:30  INFO 25857 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:20:21.752+05:30  INFO 25857 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-02T11:20:22.084+05:30  WARN 25857 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T11:20:22.594+05:30  WARN 25857 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a5085a3-88c3-40f8-9d63-fbcdb01b5067
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-02T11:20:22.634+05:30  INFO 25857 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6045d2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5618b26b, org.springframework.security.web.context.SecurityContextHolderFilter@afcfc63, org.springframework.security.web.header.HeaderWriterFilter@5d32d8f, org.springframework.security.web.csrf.CsrfFilter@56b6e072, org.springframework.security.web.authentication.logout.LogoutFilter@2a4cf2d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7647d789, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1db33525, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21ff56e7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58d103a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@749a3925, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@746a671, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12c9803d, org.springframework.security.web.access.ExceptionTranslationFilter@77fdbe42, org.springframework.security.web.access.intercept.AuthorizationFilter@58e22835]
+2024-08-02T11:20:22.652+05:30  INFO 25857 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9008 (http) with context path ''
+2024-08-02T11:20:22.656+05:30  INFO 25857 --- [main] com.crl.nms.Main                         : Started Main in 3.386 seconds (process running for 3.642)
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-5] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-5
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-2] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-2
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-4] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-4
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-3] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-3
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-1] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-1
+2024-08-02T11:20:22.671+05:30  INFO 25857 --- [pool-2-thread-6] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-6
+2024-08-02T11:20:22.672+05:30  INFO 25857 --- [pool-2-thread-8] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-8
+2024-08-02T11:20:22.672+05:30  INFO 25857 --- [pool-2-thread-7] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-7
+2024-08-02T11:20:22.672+05:30  INFO 25857 --- [pool-2-thread-9] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-9
+2024-08-02T11:20:22.675+05:30  INFO 25857 --- [pool-2-thread-10] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-10
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-11] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-11
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-12] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-12
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-13] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-13
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-15] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-15
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-14] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-14
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-16] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-16
+2024-08-02T11:20:22.676+05:30  INFO 25857 --- [pool-2-thread-17] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-17
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-18] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-18
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-19] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-19
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-20] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-20
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-21] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-21
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-22] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-22
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-23] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-23
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-24] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-24
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-25] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-25
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-26] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-26
+2024-08-02T11:20:22.677+05:30  INFO 25857 --- [pool-2-thread-27] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-27
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-2] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-2
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-4] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-4
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-1] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-1
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-6] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-6
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-8] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-8
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-5] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-5
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-11] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-11
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-3] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-3
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-17] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-17
+2024-08-02T11:20:22.684+05:30  INFO 25857 --- [pool-3-thread-7] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-7
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-12] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-12
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-10] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-10
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-13] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-13
+2024-08-02T11:20:22.685+05:30  INFO 25857 --- [pool-3-thread-15] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-15
+2024-08-02T11:20:22.686+05:30  INFO 25857 --- [pool-3-thread-16] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-16
+2024-08-02T11:20:22.686+05:30  INFO 25857 --- [pool-3-thread-18] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-18
+2024-08-02T11:20:22.686+05:30  INFO 25857 --- [pool-3-thread-14] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-14
+2024-08-02T11:20:22.686+05:30  INFO 25857 --- [pool-3-thread-9] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-9
+2024-08-02T11:20:22.692+05:30  INFO 25857 --- [pool-3-thread-19] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-19
+2024-08-02T11:20:22.693+05:30  INFO 25857 --- [pool-3-thread-20] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-20
+2024-08-02T11:20:22.717+05:30  INFO 25857 --- [pool-3-thread-21] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-21
+2024-08-02T11:20:22.722+05:30  INFO 25857 --- [pool-3-thread-22] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-22
+2024-08-02T11:20:22.723+05:30  INFO 25857 --- [pool-3-thread-23] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-23
+2024-08-02T11:22:02.868+05:30  WARN 25857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s701ms428µs401ns).
+2024-08-02T11:25:07.716+05:30  WARN 25857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m4s848ms309µs915ns).
+2024-08-02T11:27:11.916+05:30  WARN 25857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s200ms317µs563ns).
+2024-08-02T11:29:09.117+05:30  WARN 25857 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s896ms501µs87ns).
+2024-08-02T11:29:09.146+05:30  INFO 25857 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:29:09.148+05:30  INFO 25857 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T11:29:09.149+05:30  INFO 25857 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-02T11:29:10.010+05:30  INFO 26266 --- [main] com.crl.nms.Main                         : Starting Main using Java 21.0.3 with PID 26266 (/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY/target/classes started by crl in /home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_AUTO_DISCOVERY)
+2024-08-02T11:29:10.012+05:30  INFO 26266 --- [main] com.crl.nms.Main                         : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T11:29:10.507+05:30  INFO 26266 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T11:29:10.565+05:30  INFO 26266 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 46 JPA repository interfaces.
+2024-08-02T11:29:10.935+05:30  INFO 26266 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9008 (http)
+2024-08-02T11:29:10.939+05:30  INFO 26266 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T11:29:10.939+05:30  INFO 26266 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2024-08-02T11:29:10.977+05:30  INFO 26266 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T11:29:10.977+05:30  INFO 26266 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2024-08-02T11:29:11.049+05:30  WARN 26266 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-08-02T11:29:11.049+05:30  INFO 26266 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T11:29:11.116+05:30  INFO 26266 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@437bd805
+2024-08-02T11:29:11.117+05:30  INFO 26266 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T11:29:11.135+05:30  INFO 26266 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T11:29:11.156+05:30  INFO 26266 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-08-02T11:29:11.158+05:30  INFO 26266 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-08-02T11:29:11.265+05:30  INFO 26266 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:29:11.310+05:30  INFO 26266 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T11:29:11.535+05:30  INFO 26266 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-02T11:29:12.000+05:30  INFO 26266 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02T11:29:12.265+05:30  INFO 26266 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T11:29:12.420+05:30  INFO 26266 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-02T11:29:12.752+05:30  WARN 26266 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T11:29:13.216+05:30  WARN 26266 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6bff7968-dc6a-4bb9-957a-b8306ee50f2c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-02T11:29:13.258+05:30  INFO 26266 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@143a4506, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706ff320, org.springframework.security.web.context.SecurityContextHolderFilter@7d332e20, org.springframework.security.web.header.HeaderWriterFilter@22b0f013, org.springframework.security.web.csrf.CsrfFilter@1676550a, org.springframework.security.web.authentication.logout.LogoutFilter@56510bb2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ea0e29d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79a4f733, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@567a2954, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25983534, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a6129a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71d81a3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bee92f9, org.springframework.security.web.access.ExceptionTranslationFilter@214c51eb, org.springframework.security.web.access.intercept.AuthorizationFilter@2cc112a5]
+2024-08-02T11:29:13.277+05:30  INFO 26266 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9008 (http) with context path ''
+2024-08-02T11:29:13.281+05:30  INFO 26266 --- [main] com.crl.nms.Main                         : Started Main in 3.593 seconds (process running for 3.917)
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-4] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-4
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-1] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-1
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-6] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-6
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-5] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-5
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-2] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-2
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-3] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-3
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-7] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-7
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-8] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-8
+2024-08-02T11:29:13.297+05:30  INFO 26266 --- [pool-2-thread-9] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-9
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-10] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-10
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-11] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-11
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-12] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-12
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-13] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-13
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-14] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-14
+2024-08-02T11:29:13.298+05:30  INFO 26266 --- [pool-2-thread-15] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-15
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-16] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-16
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-18] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-18
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-17] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-17
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-19] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-19
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-20] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-20
+2024-08-02T11:29:13.299+05:30  INFO 26266 --- [pool-2-thread-21] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-21
+2024-08-02T11:29:13.303+05:30  INFO 26266 --- [pool-2-thread-22] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-22
+2024-08-02T11:29:13.303+05:30  INFO 26266 --- [pool-2-thread-23] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-23
+2024-08-02T11:29:13.303+05:30  INFO 26266 --- [pool-2-thread-27] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-27
+2024-08-02T11:29:13.303+05:30  INFO 26266 --- [pool-2-thread-26] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-26
+2024-08-02T11:29:13.303+05:30  INFO 26266 --- [pool-2-thread-25] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-25
+2024-08-02T11:29:13.304+05:30  INFO 26266 --- [pool-2-thread-24] c.c.n.s.NePingSubPollThreadService       : NePingSubPollThread Runningpool-2-thread-24
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-2] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-2
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-7] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-7
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-4] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-4
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-9] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-9
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-10] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-10
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-1] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-1
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-3] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-3
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-5] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-5
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-6] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-6
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-8] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-8
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-11] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-11
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-21] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-21
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-13] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-13
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-14] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-14
+2024-08-02T11:29:13.310+05:30  INFO 26266 --- [pool-3-thread-15] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-15
+2024-08-02T11:29:13.311+05:30  INFO 26266 --- [pool-3-thread-16] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-16
+2024-08-02T11:29:13.311+05:30  INFO 26266 --- [pool-3-thread-17] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-17
+2024-08-02T11:29:13.311+05:30  INFO 26266 --- [pool-3-thread-18] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-18
+2024-08-02T11:29:13.312+05:30  INFO 26266 --- [pool-3-thread-20] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-20
+2024-08-02T11:29:13.312+05:30  INFO 26266 --- [pool-3-thread-12] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-12
+2024-08-02T11:29:13.312+05:30  INFO 26266 --- [pool-3-thread-19] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-19
+2024-08-02T11:29:13.312+05:30  INFO 26266 --- [pool-3-thread-22] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-22
+2024-08-02T11:29:13.333+05:30  INFO 26266 --- [pool-3-thread-23] c.c.n.service.NeDetailPollThreadService  : NePingSubPollThread Runningpool-3-thread-23
+2024-08-02T11:29:51.281+05:30  WARN 26266 --- [pool-3-thread-26] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-08-02T11:29:51.281+05:30  WARN 26266 --- [pool-3-thread-11] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-08-02T11:29:51.281+05:30 ERROR 26266 --- [pool-3-thread-26] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ne_connectivity_pkey"
+  Detail: Key (dest_nekey, dest_port, src_nekey, src_port)=(1001_19_37, 1, 1001_13_34, 10) already exists.
+2024-08-02T11:29:51.281+05:30 ERROR 26266 --- [pool-3-thread-11] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ne_connectivity_pkey"
+  Detail: Key (dest_nekey, dest_port, src_nekey, src_port)=(1001_6_34, 1, 1001_11_34, 48) already exists.
+2024-08-02T11:30:00.315+05:30  INFO 26266 --- [pool-3-thread-22] com.crl.nms.service.DbHandlerService     : neKey11001_20_37
+2024-08-02T11:31:15.726+05:30  WARN 26266 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s968ms19µs495ns).
+2024-08-02T11:50:45.668+05:30  WARN 26266 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m29s942ms808µs242ns).
+2024-08-02T13:58:09.516+05:30  WARN 26266 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h7m23s847ms675µs995ns).
+2024-08-02T13:58:09.538+05:30  INFO 26266 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T13:58:09.539+05:30  INFO 26266 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T13:58:09.546+05:30  INFO 26266 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
