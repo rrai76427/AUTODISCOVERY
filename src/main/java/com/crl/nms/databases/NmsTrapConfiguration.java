@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.math.BigInteger;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+import java.math.BigInteger;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -179,5 +179,5 @@ public class NmsTrapConfiguration implements Serializable {
     public String toString() {
         return "shm_bo.NmsTrapConfiguration[ nmsTrapConfigurationPK=" + nmsTrapConfigurationPK + " ]";
     }
-    
+
 }

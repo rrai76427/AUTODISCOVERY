@@ -7,7 +7,6 @@ import lombok.Builder;
 import java.util.Date;
 
 
-
 @Embeddable
 @Builder
 @AllArgsConstructor

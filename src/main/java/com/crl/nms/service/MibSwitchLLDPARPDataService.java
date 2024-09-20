@@ -1,10 +1,7 @@
 package com.crl.nms.service;
 
 
-
-
 import com.crl.nms.pojo.MibSwitchLLDPDataPojo;
-import com.crl.nms.pojo.NeObjectPojo;
 import org.springframework.stereotype.Service;
 
 import java.io.DataInputStream;
@@ -27,10 +24,10 @@ public class MibSwitchLLDPARPDataService {
         InputStream is = null;
         int portCnt = 0;
         //.1.3.8802.1.1.2.1.3.2.0
-        String AuthAlgo="MD5";
-        String AuthAlgoUser="crl@123456";
-        String privAlgoUser="crl@123456";
-        String PrivAlgo="DES";
+        String AuthAlgo = "MD5";
+        String AuthAlgoUser = "crl@123456";
+        String privAlgoUser = "crl@123456";
+        String PrivAlgo = "DES";
         final ConcurrentHashMap<String, String> oidhp = new ConcurrentHashMap(5, 0.9f, 5);
         String switchArpoid = "1.3.6.1.2.1.4.22.1";
 
@@ -129,7 +126,7 @@ public class MibSwitchLLDPARPDataService {
             din.close();
 
         }
-        OperationSwitchArpService op =new OperationSwitchArpService();
+        OperationSwitchArpService op = new OperationSwitchArpService();
         op.fillSwitchInfo(ne_ip, portCnt, oidhp);
 
 

@@ -25,8 +25,6 @@ public class IfLastChange {
     private String paramValue;
 
 
-
-
     public IfLastChange() {
     }
 }

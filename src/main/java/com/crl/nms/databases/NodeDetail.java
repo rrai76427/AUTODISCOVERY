@@ -1,6 +1,4 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
@@ -8,8 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -177,5 +177,5 @@ public class NodeDetail implements Serializable {
     public String toString() {
         return "shm_bo.NodeDetail[ nodeDetailPK=" + nodeDetailPK + " ]";
     }
-    
+
 }

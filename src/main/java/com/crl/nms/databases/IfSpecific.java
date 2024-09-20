@@ -23,8 +23,6 @@ public class IfSpecific {
     private String paramValue;
 
 
-
-
     public IfSpecific() {
     }
 }

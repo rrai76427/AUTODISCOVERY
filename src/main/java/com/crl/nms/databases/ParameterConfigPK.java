@@ -5,7 +5,6 @@ import jakarta.persistence.Embeddable;
 import lombok.*;
 
 /**
- *
  * @author Sneha Prajapati
  */
 

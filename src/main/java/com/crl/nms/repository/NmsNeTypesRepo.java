@@ -11,9 +11,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NmsNeTypesRepo extends JpaRepository<NmsNeTypes, Short>{
+public interface NmsNeTypesRepo extends JpaRepository<NmsNeTypes, Short> {
 }

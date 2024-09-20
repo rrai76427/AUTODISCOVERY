@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import java.io.Serializable;
-import java.util.Date;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author ashwinimehta
  */
 @Embeddable
@@ -54,5 +54,5 @@ public class NmsInfoEventsPK implements Serializable {
     public String toString() {
         return "shm_bo.NmsInfoEventsPK[ recvDatetime=" + recvDatetime + ", username=" + email + " ]";
     }
-    
+
 }

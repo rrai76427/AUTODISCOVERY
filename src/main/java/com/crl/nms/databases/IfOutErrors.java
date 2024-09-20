@@ -25,7 +25,6 @@ public class IfOutErrors {
     private String paramValue;
 
 
-
     public IfOutErrors() {
     }
 }

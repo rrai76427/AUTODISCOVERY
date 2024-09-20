@@ -6,7 +6,6 @@
 package com.crl.nms.lldpTable;
 
 /**
- *
  * @author root
  */
 public class lldpRemTable {

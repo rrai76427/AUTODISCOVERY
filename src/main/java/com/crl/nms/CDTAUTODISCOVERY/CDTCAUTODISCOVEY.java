@@ -10,7 +10,6 @@ package com.crl.nms.CDTAUTODISCOVERY;
 //import main.java.com.crl.nms.networkElementPoll.NeFpingPollThread;
 
 /**
- *
  * @author root
  */
 public class CDTCAUTODISCOVEY {
@@ -27,5 +26,5 @@ public class CDTCAUTODISCOVEY {
      //   new NeFpingPollThread("150.65.0.23", "150.65.0.30").start();
         
     }*/
-    
+
 }

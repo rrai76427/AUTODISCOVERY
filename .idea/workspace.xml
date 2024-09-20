@@ -4,45 +4,234 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fae6d653-a206-493f-8fca-9298947e3050" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AddDeviceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AuthenticationProtocolEnumPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/PrivacyProtocolEnumPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/AuthenticationProtocolEnumRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/PrivacyProtocolEnumRepo.java" afterDir="false" />
+    <list default="true" id="fae6d653-a206-493f-8fca-9298947e3050" name="Changes" comment="add message">
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_AUTO_DISCOVERY.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_EMSBackend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_EMSBackend.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_ALARM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_ALARM.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_DETAIL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_DETAIL.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_ENTERPRISE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_ENTERPRISE.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_HEALTH" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CBTC_NMS_NE_HEALTH.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applicationneautodiscovery.properties" beforeDir="false" afterPath="$PROJECT_DIR$/applicationneautodiscovery.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autodiscovery.log" beforeDir="false" afterPath="$PROJECT_DIR$/autodiscovery.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-26.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-27.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-27.1.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-27.2.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-27.3.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-28.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-29.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autodiscovery.log.2024-08-30.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.reveng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.reveng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/CDTCAUTODISCOVEY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/CDTCAUTODISCOVEY.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/actors/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/actors/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/configuration/SpringContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/configuration/SpringContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/AlarmSeverityEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/AlarmSeverityEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/AuthenticationProtocolEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/AuthenticationProtocolEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/CPUConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/CPUConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ComputationalSubjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ComputationalSubjectConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/CustomDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/CustomDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DashboardEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DashboardEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePacketLoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePacketLoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePacketLossPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePacketLossPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePingStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DevicePingStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceResponseTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceResponseTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceResponseTimePK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceResponseTimePK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/DeviceStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseParamTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseParamTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseParamTemplatePK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseParamTemplatePK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseRepositoryPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseRepositoryPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseSyntaxConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/EnterpriseSyntaxConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/FaultStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/FaultStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GeoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GeoMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GroupDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GroupDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GroupTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/GroupTopology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/HDDConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/HDDConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/Hierarchy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/Hierarchy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfAdminStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfAdminStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInDiscards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInDiscards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInErrorsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInErrorsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInNUcastPkts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInNUcastPkts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInNUcastPktsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInNUcastPktsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInOctets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInOctets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUcastPkts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUcastPkts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUnknownProtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUnknownProtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUnknownProtosPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfInUnknownProtosPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfIndexPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfIndexPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfLastChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfLastChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfMtu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfMtu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOperStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOperStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutDiscards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutDiscards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutNUcastPkts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutNUcastPkts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutNUcastPktsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutNUcastPktsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutOctets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutOctets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutQlen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutQlen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutUcastPkts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutUcastPkts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutUcastPktsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfOutUcastPktsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfPhysAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfPhysAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfSpecific.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfSpecific.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfSpeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/IfSpeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LineData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LineData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkComPortDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkComPortDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkComPortDetailPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkComPortDetailPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkConfigurationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkConfigurationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkMediaDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkMediaDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkMediaDetailsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkMediaDetailsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LinkStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LocationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LocationDataPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LocationDataPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LogMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/LogMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NeConnectivityPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NeConnectivityPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NetworkInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NetworkInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmBackupFileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmBackupFileInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmClassification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmClassification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmsBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsAlarmsBackup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsDeviceLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsDeviceLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsInfoEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsInfoEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsInfoEventsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsInfoEventsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsLevelPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsLevelPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeCpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeCpu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeCpuPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeCpuPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceInterfaceDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceInterfaceDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceInterfaceDetailPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceInterfaceDetailPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceStatsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeDeviceStatsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeHdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeHdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeProcesses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeProcesses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeProcessesPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeProcessesPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeRam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeRam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeRamPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeRamPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeSnmpConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeSnmpConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeSnmpConfigPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeSnmpConfigPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeTypeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeTypeImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsNeTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsPerfIftable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsPerfIftable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsPerfIftablePK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsPerfIftablePK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsSysRoleBasedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsSysRoleBasedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapConfigurationPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapConfigurationPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapRepositoryPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsTrapRepositoryPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsUserLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsUserLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsUserLoginInfoPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsUserLoginInfoPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringHistoryPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringHistoryPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NmsVsatPortMonitoringPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDetailPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeDetailPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeHealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeHealth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationDetailsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationDetailsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationTemplatePK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeApplicationTemplatePK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeConfigDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeConfigDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeConfigDetailsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeConfigDetailsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/NodeNeTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/OrbatDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/OrbatDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ParameterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ParameterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ParameterConfigPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ParameterConfigPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PerfdataNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PerfdataNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PerfdataNetworkPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PerfdataNetworkPK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PrivacyProtocolEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/PrivacyProtocolEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ProcessStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ProcessStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ProcessStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/ProcessStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RAMConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RAMConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarBiteClassification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarBiteClassification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorWarning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorWarning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorWarningPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorWarningPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorsPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarErrorsPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarModuleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RadarModuleInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RdtJobDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/RdtJobDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorByteMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorByteMeasurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorByteMeasurementPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorByteMeasurementPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorDeployment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorDeployment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SensorInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SharpEyeStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SharpEyeStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpProfileTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpProfileTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpVersionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SnmpVersionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/StaticDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/StaticDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysLogMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysLogMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysRoleMenuConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysRoleMenuConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysRoleSystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SysRoleSystemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SystemEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/SystemEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/Topology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/Topology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/TopologyDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/TopologyDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/TopologyGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/TopologyGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/VhfRadioDetailInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/VhfRadioDetailInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/VhfRadioDetailInfoPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/VhfRadioDetailInfoPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetMetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetMetaDataPK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/databases/WidgetMetaDataPK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/dbbackup/PostgreSQLBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/dbbackup/PostgreSQLBackup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/kafka/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/kafka/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/lldpTable/lldpRemTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/lldpTable/lldpRemTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/messages/IpRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/messages/IpRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AddDeviceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AddDeviceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AuthenticationProtocolEnumPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/AuthenticationProtocolEnumPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/CurrInfoPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/CurrInfoPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/MibSwitchLLDPDataPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/MibSwitchLLDPDataPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/NeObjectPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/NeObjectPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/NeTypeClassPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/NeTypeClassPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/PrivacyProtocolEnumPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/PrivacyProtocolEnumPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/AuthenticationProtocolEnumRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/AuthenticationProtocolEnumRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/GemRadarStatusRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/GemRadarStatusRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/LinkMediaDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/LinkMediaDetailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NeConnectivityRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NeConnectivityRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsAlarmClassificationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsAlarmClassificationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsAlarmsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsAlarmsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsDeviceLinkRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsDeviceLinkRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeCpuRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeCpuRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeHddRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeHddRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeProcessesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeProcessesRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeRamRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeRamRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeSnmpConfigRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeSnmpConfigRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeTypesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsNeTypesRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsPerfIftableRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsPerfIftableRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsSnmpEnterPriseDataRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsSnmpEnterPriseDataRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsTrapRepositoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsTrapRepositoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsUserLoginInfoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsUserLoginInfoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsVsatPortMonitoringHistoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NmsVsatPortMonitoringHistoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NodeDefinitionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NodeDefinitionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NodeDetailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/NodeDetailRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/PrivacyProtocolEnumRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/PrivacyProtocolEnumRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorByteMeasurementRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorByteMeasurementRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorDeploymentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorDeploymentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorInfoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SensorInfoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SharpEyeStatusRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SharpEyeStatusRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SnmpProfileTemplateRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/repository/SnmpProfileTemplateRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/BackupSchedulerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/BackupSchedulerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/DbHandlerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/DbHandlerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/LLDPDiscoveryThreadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/LLDPDiscoveryThreadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPARPDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPARPDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NePingSubPollThreadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/NePingSubPollThreadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchArpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchArpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cbtcnms_autodiscovery-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cbtcnms_autodiscovery-0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cbtcnms_autodiscovery-0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/cbtcnms_autodiscovery-0.1.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/databases/AuthenticationProtocolEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/databases/AuthenticationProtocolEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/databases/PrivacyProtocolEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/databases/PrivacyProtocolEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/service/DbHandlerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/service/DbHandlerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/service/MibSwitchLLDPDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/service/MibSwitchLLDPDataService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/service/NeDetailPollThreadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/service/NeDetailPollThreadService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/crl/nms/service/NePingSubPollThreadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/crl/nms/service/NePingSubPollThreadService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,15 +257,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_EMSBackend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/crl/PROJECT/TELECOM/CBTCDEMO/CBTC_PROD/CBTC_CODE_FILES_18jul/CBTC_EMSBackend&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/crl/nms" />
@@ -146,6 +335,21 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add message" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -206,82 +410,82 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java</url>
-          <line>103</line>
+          <line>100</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/MibSwitchLLDPDataPojo.java</url>
-          <line>171</line>
+          <line>169</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/pojo/MibSwitchLLDPDataPojo.java</url>
-          <line>172</line>
+          <line>170</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>354</line>
+          <line>342</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>87</line>
+          <line>77</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>253</line>
+          <line>241</line>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>332</line>
+          <line>320</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>334</line>
+          <line>322</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>427</line>
+          <line>412</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>330</line>
+          <line>318</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>271</line>
+          <line>259</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>419</line>
+          <line>404</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>344</line>
+          <line>332</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>434</line>
+          <line>419</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>370</line>
+          <line>356</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/OperationSwitchService.java</url>
-          <line>376</line>
+          <line>362</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -311,17 +515,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Main.java</url>
-          <line>29</line>
+          <line>15</line>
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/CDTAUTODISCOVERY/Main.java</url>
-          <line>40</line>
+          <line>26</line>
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/Main.java</url>
-          <line>157</line>
+          <line>183</line>
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -331,22 +535,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>157</line>
+          <line>156</line>
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>155</line>
+          <line>154</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>199</line>
+          <line>198</line>
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/Main.java</url>
-          <line>81</line>
+          <line>106</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -380,169 +584,44 @@
           <option name="timeStamp" value="271" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="272" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/actors/MessageListener.java</url>
-          <line>31</line>
+          <line>29</line>
           <option name="timeStamp" value="273" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="274" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="279" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="280" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NePingSubPollThreadService.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="285" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NePingSubPollThreadService.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>429</line>
+          <line>435</line>
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeFpingPollThreadService.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="290" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>354</line>
-          <option name="timeStamp" value="291" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>412</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>477</line>
-          <option name="timeStamp" value="297" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>479</line>
+          <line>485</line>
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>481</line>
+          <line>487</line>
           <option name="timeStamp" value="299" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>484</line>
+          <line>490</line>
           <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>488</line>
-          <option name="timeStamp" value="301" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>490</line>
-          <option name="timeStamp" value="302" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>492</line>
-          <option name="timeStamp" value="303" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>494</line>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>497</line>
-          <option name="timeStamp" value="305" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>501</line>
-          <option name="timeStamp" value="307" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>503</line>
-          <option name="timeStamp" value="308" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>505</line>
-          <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>524</line>
+          <line>530</line>
           <option name="timeStamp" value="319" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>526</line>
+          <line>532</line>
           <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>365</line>
-          <option name="timeStamp" value="323" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>385</line>
-          <option name="timeStamp" value="324" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>437</line>
-          <option name="timeStamp" value="337" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>454</line>
+          <line>460</line>
           <option name="timeStamp" value="339" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>449</line>
-          <option name="timeStamp" value="340" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>445</line>
-          <option name="timeStamp" value="341" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>414</line>
-          <option name="timeStamp" value="342" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>415</line>
-          <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
@@ -551,80 +630,112 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>472</line>
+          <line>478</line>
           <option name="timeStamp" value="348" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>473</line>
+          <line>479</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>507</line>
-          <option name="timeStamp" value="353" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>541</line>
+          <line>548</line>
           <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>532</line>
-          <option name="timeStamp" value="361" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>516</line>
+          <line>522</line>
           <option name="timeStamp" value="362" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>518</line>
+          <line>524</line>
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>520</line>
+          <line>526</line>
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>522</line>
+          <line>528</line>
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>420</line>
+          <line>426</line>
           <option name="timeStamp" value="366" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/LLDPDiscoveryThreadService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="367" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>208</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/DbHandlerService.java</url>
+          <line>884</line>
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/DbHandlerService.java</url>
+          <line>895</line>
+          <option name="timeStamp" value="376" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="377" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/MibSwitchLLDPDataService.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>513</line>
+          <line>519</line>
           <properties class="com.crl.nms.service.NeDetailPollThreadService" method="determineDeviceType">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="351" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>476</line>
-          <properties class="com.crl.nms.service.NeDetailPollThreadService" method="determineOperatingSystem">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="358" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crl/nms/service/NeDetailPollThreadService.java</url>
-          <line>487</line>
-          <properties class="com.crl.nms.service.NeDetailPollThreadService" method="determineHardwareType">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="359" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

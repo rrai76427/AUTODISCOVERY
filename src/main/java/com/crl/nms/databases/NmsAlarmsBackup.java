@@ -1,14 +1,14 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -21,7 +21,7 @@ public class NmsAlarmsBackup implements Serializable {
     private String nekey;
     @Column(name = "NODE_ID")
     private Integer nodeId;
-    
+
     @Column(name = "ALARM_ID")
     private Short alarmId;
     @Column(name = "SEVERITY")
@@ -85,7 +85,7 @@ public class NmsAlarmsBackup implements Serializable {
         this.nodeId = nodeId;
     }
 
-    
+
     public Short getAlarmId() {
         return alarmId;
     }
@@ -246,5 +246,5 @@ public class NmsAlarmsBackup implements Serializable {
     public String toString() {
         return "shm_bo.NmsAlarmsBackup[ tagno=" + tagno + " ]";
     }
-    
+
 }

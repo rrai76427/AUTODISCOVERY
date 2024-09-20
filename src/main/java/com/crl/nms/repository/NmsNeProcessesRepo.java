@@ -14,14 +14,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NmsNeProcessesRepo extends JpaRepository<NmsNeProcesses, NmsNeProcessesPK>{
+public interface NmsNeProcessesRepo extends JpaRepository<NmsNeProcesses, NmsNeProcessesPK> {
 
     List<NmsNeProcesses> findByNmsNeProcessesPKNekeyAndProcnoLessThanEqual(String nekey, Integer procno);
 
     List<NmsNeProcesses> findByNmsNeProcessesPKNekeyAndProcnoGreaterThan(String nekey, Integer procno);
-    
+
 }

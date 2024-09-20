@@ -8,7 +8,6 @@ package com.crl.nms.pojo;
 //import main.java.com.crl.nms.CDTAUTODISCOVERY.Constants;
 
 /**
- *
  * @author root
  */
 public class NeObjectPojo {
@@ -33,9 +32,9 @@ public class NeObjectPojo {
     public byte lan_2 = 2;
     public byte lan_3 = 3;
 
-   // public byte lan_status1 = Constants.DOWN;
-  //  public byte lan_status2 = Constants.DOWN;
-   // public byte lan_status3 = Constants.DOWN;
+    // public byte lan_status1 = Constants.DOWN;
+    //  public byte lan_status2 = Constants.DOWN;
+    // public byte lan_status3 = Constants.DOWN;
 
     public byte lan_status1_down_cnt = 0;
     public byte lan_status2_down_cnt = 0;

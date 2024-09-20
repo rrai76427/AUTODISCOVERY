@@ -6,18 +6,17 @@
 package com.crl.nms.repository;
 
 
-import java.util.List;
-
 import com.crl.nms.databases.NmsDeviceLink;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NmsDeviceLinkRepo extends JpaRepository<NmsDeviceLink, String>{
-    
+public interface NmsDeviceLinkRepo extends JpaRepository<NmsDeviceLink, String> {
+
     List<NmsDeviceLink> findBynmsNeDetailNekey(String nekey);
 }

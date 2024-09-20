@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
+
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -207,5 +208,5 @@ public class LinkMediaDetails implements Serializable {
     public String toString() {
         return "shm_bo.LinkMediaDetails[ linkMediaDetailsPK=" + linkMediaDetailsPK + " ]";
     }
-    
+
 }

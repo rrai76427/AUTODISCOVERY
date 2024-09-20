@@ -1,10 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
 import java.io.Serializable;
 
-import jakarta.persistence.*;
-
 /**
- *
  * @author meenuchhindra
  */
 @Embeddable
@@ -85,5 +87,5 @@ public class SensorByteMeasurementPK implements Serializable {
     public String toString() {
         return "com.nms.crl.bo.SensorByteMeasurementPK[ nodeId=" + nodeId + ", reportingSensorId=" + reportingSensorId + ", radarMeasurementId=" + radarMeasurementId + " ]";
     }
-    
+
 }

@@ -1,13 +1,13 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -20,28 +20,28 @@ public class NmsNeProcesses implements Serializable {
     @EmbeddedId
     protected NmsNeProcessesPK nmsNeProcessesPK;
     @Column(name = "PROCNO")
-    private Integer procno=0;
+    private Integer procno = 0;
     @Column(name = "PROCSTATUS")
-    private Short procstatus=0;
+    private Short procstatus = 0;
     @Column(name = "PROCPATH")
-    private String procpath="NA";
+    private String procpath = "NA";
     @Column(name = "PROCSIZE")
-    private String procsize="NA";
+    private String procsize = "NA";
     @Column(name = "PROCCKSUM")
-    private String proccksum="NA";
+    private String proccksum = "NA";
     @Column(name = "RUN_DURATION")
-    private String runDuration="NA";
+    private String runDuration = "NA";
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "CPU_PERCENT")
-    private BigDecimal cpuPercent=BigDecimal.valueOf(0);
+    private BigDecimal cpuPercent = BigDecimal.valueOf(0);
     @Column(name = "MEM_PERCENT")
-    private BigDecimal memPercent=BigDecimal.valueOf(0);
+    private BigDecimal memPercent = BigDecimal.valueOf(0);
     @Column(name = "IOREAD_BYTES")
-    private String ioreadBytes="NA";
+    private String ioreadBytes = "NA";
     @Column(name = "IOWRITE_BYTES")
-    private String iowriteBytes="NA";
+    private String iowriteBytes = "NA";
     @Column(name = "PROCSTATE")
-    private Short procstate=0;
+    private Short procstate = 0;
     @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private NmsNeDetail nmsNeDetail;
@@ -52,6 +52,7 @@ public class NmsNeProcesses implements Serializable {
     @Column(name = "UPDATETIME")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatetime;
+
     public NmsNeProcesses() {
     }
 
@@ -207,5 +208,5 @@ public class NmsNeProcesses implements Serializable {
     public String toString() {
         return "shm_bo.NmsNeProcesses[ nmsNeProcessesPK=" + nmsNeProcessesPK + " ]";
     }
-    
+
 }

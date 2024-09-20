@@ -1,6 +1,8 @@
 package com.crl.nms.databases;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import lombok.*;
 
 
@@ -25,7 +27,6 @@ public class NmsNeDeviceStatsPK {
     @Basic(optional = false)
     @Column(name = "NODE_KEY")
     private Integer nodeKey;
-
 
 
 }

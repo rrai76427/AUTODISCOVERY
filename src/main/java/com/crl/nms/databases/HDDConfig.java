@@ -1,11 +1,12 @@
 package com.crl.nms.databases;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.util.Date;
-
-
 
 
 @Entity

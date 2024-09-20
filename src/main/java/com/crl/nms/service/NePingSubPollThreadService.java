@@ -1,42 +1,40 @@
 package com.crl.nms.service;
+
 import com.crl.nms.CDTAUTODISCOVERY.Constants;
 import com.crl.nms.CDTAUTODISCOVERY.Global;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import com.crl.nms.messages.IpRange;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
- *
  * @author root
  */
 @Service
 public class NePingSubPollThreadService extends Thread implements Constants {
 
     private static final Logger logger = LoggerFactory.getLogger(NePingSubPollThreadService.class);
-
-   // @Autowired
-    private DbHandlerService dbHandlerService;
-
     //  private final DbHandler dbObj;
     StringBuilder sb;
     IpRange ipRange;
+    // @Autowired
+    private DbHandlerService dbHandlerService;
 
-  //  private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(NePingSubPollThread.class);
-  NePingSubPollThreadService() {
+    //  private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(NePingSubPollThread.class);
+    NePingSubPollThreadService() {
 
-  }
+    }
+
     NePingSubPollThreadService(StringBuilder sb, DbHandlerService dbHandlerService, IpRange ipRange) {
         this.sb = sb;
-        this.dbHandlerService=dbHandlerService;
-        this.ipRange=ipRange;
+        this.dbHandlerService = dbHandlerService;
+        this.ipRange = ipRange;
     }
 
     @Override
@@ -64,16 +62,14 @@ public class NePingSubPollThreadService extends Thread implements Constants {
                 inputLine = (String) linelist.remove(i);
                 liveIpList.add(inputLine);
                 if (inputLine.length() > 4) {
-                    System.out.println(inputLine+" "+inputLine.length());
+                    System.out.println(inputLine + " " + inputLine.length());
                     StringBuilder sb = new StringBuilder("  nmap -A -T4 ").append(inputLine);
                     System.out.println(sb.toString());
 
-                    NeDetailPollThreadService worker = new NeDetailPollThreadService(sb,dbHandlerService,ipRange);
+                    NeDetailPollThreadService worker = new NeDetailPollThreadService(sb, dbHandlerService, ipRange);
                     Global.neDetailscheduledThreadPool.submit(worker);//schedule(w
 
                 }
-
-
 
 
             }
@@ -100,11 +96,10 @@ public class NePingSubPollThreadService extends Thread implements Constants {
             boolean aliveFlg = false;
             if (!liveIpList.isEmpty()) {
                 aliveFlg = liveIpList.contains("is alive");
-           }
-              if (liveIpList.stream().count() > 4) {
-           System.out.println(liveIpList);
-              }
-
+            }
+            if (liveIpList.stream().count() > 4) {
+                System.out.println(liveIpList);
+            }
 
 
         } catch (Exception ex) {

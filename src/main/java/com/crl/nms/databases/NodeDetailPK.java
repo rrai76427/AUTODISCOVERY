@@ -1,11 +1,13 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
+package com.crl.nms.databases;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import lombok.Builder;
 
+import java.io.Serializable;
+
 /**
- *
  * @author ashwinimehta
  */
 @Embeddable
@@ -71,5 +73,5 @@ public class NodeDetailPK implements Serializable {
     public String toString() {
         return "shm_bo.NodeDetailPK[ nodeId=" + nodeId + ", parentId=" + parentId + " ]";
     }
-    
+
 }

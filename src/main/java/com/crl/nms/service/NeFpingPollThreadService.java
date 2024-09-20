@@ -12,7 +12,6 @@ package com.crl.nms.service;
 
 
 /**
- *
  * @author root
  */
 //import main.java.com.crl.nms.CDTAUTODISCOVERY.Global;
@@ -21,8 +20,6 @@ import com.crl.nms.CDTAUTODISCOVERY.Global;
 import com.crl.nms.messages.IpRange;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
@@ -37,22 +34,22 @@ public class NeFpingPollThreadService extends Thread {
 
     //private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(NeFpingPollThread.class);
     private static final Logger logger = LoggerFactory.getLogger(NeFpingPollThreadService.class);
-
-   // @Autowired
-    private DbHandlerService dbHandlerService;
     boolean pollStart = true;
     String ipStartRange;
     String ipEndRange;
-
     IpRange ipRange;
+    // @Autowired
+    private DbHandlerService dbHandlerService;
+
     public NeFpingPollThreadService() {
 
     }
-    public NeFpingPollThreadService(String ipStartRange, String ipEndRange, IpRange ipRange,DbHandlerService dbHandlerService) {
+
+    public NeFpingPollThreadService(String ipStartRange, String ipEndRange, IpRange ipRange, DbHandlerService dbHandlerService) {
         this.ipStartRange = ipStartRange;
         this.ipEndRange = ipEndRange;
-        this.dbHandlerService=dbHandlerService;
-        this.ipRange=ipRange;
+        this.dbHandlerService = dbHandlerService;
+        this.ipRange = ipRange;
     }
 
     @Override
@@ -89,7 +86,7 @@ public class NeFpingPollThreadService extends Thread {
                         for (short i2 = Short.valueOf(ipStartOctetByte[2]); i2 < 256; i2++) {
                             for (short i3 = Short.valueOf(ipStartOctetByte[3]); i3 <= Short.valueOf(ipEndOCtetByte[3]); i3++) {
                                 String neIpAddress = new StringBuilder("").append(i0).append(".").append(i1).append(".").append(i2).append(".").append(i3).toString();
-                                checkNewUpdates(neIpAddress,ipRange);
+                                checkNewUpdates(neIpAddress, ipRange);
                             }
                         }
                     }
@@ -101,7 +98,7 @@ public class NeFpingPollThreadService extends Thread {
                         for (short i2 = Short.valueOf(ipStartOctetByte[2]); i2 < 256; i2++) {
                             for (short i3 = Short.valueOf(ipStartOctetByte[3]); i3 <= Short.valueOf(ipEndOCtetByte[3]); i3++) {
                                 String neIpAddress = new StringBuilder("").append(i0).append(".").append(i1).append(".").append(i2).append(".").append(i3).toString();
-                                checkNewUpdates(neIpAddress,ipRange);
+                                checkNewUpdates(neIpAddress, ipRange);
                             }
                         }
                     }
@@ -113,7 +110,7 @@ public class NeFpingPollThreadService extends Thread {
                         for (short i2 = Short.valueOf(ipStartOctetByte[2]); i2 <= Short.valueOf(ipEndOCtetByte[2]); i2++) {
                             for (short i3 = Short.valueOf(ipStartOctetByte[3]); i3 <= Short.valueOf(ipEndOCtetByte[3]); i3++) {
                                 String neIpAddress = new StringBuilder("").append(i0).append(".").append(i1).append(".").append(i2).append(".").append(i3).toString();
-                                checkNewUpdates(neIpAddress,ipRange);
+                                checkNewUpdates(neIpAddress, ipRange);
                             }
                         }
                     }
@@ -125,7 +122,7 @@ public class NeFpingPollThreadService extends Thread {
                         for (short i2 = Short.valueOf(ipStartOctetByte[2]); i2 <= Short.valueOf(ipEndOCtetByte[2]); i2++) {
                             for (short i3 = Short.valueOf(ipStartOctetByte[3]); i3 <= Short.valueOf(ipEndOCtetByte[3]); i3++) {
                                 String neIpAddress = new StringBuilder("").append(i0).append(".").append(i1).append(".").append(i2).append(".").append(i3).toString();
-                                checkNewUpdates(neIpAddress,ipRange);
+                                checkNewUpdates(neIpAddress, ipRange);
                             }
                         }
                     }
@@ -137,12 +134,12 @@ public class NeFpingPollThreadService extends Thread {
         }
     }
 
-    private void checkNewUpdates(String neIpAddress,IpRange ipRange) {
+    private void checkNewUpdates(String neIpAddress, IpRange ipRange) {
 
         StringBuilder sb = new StringBuilder("fping -a -r 2 ").append(neIpAddress);
         System.out.println(sb.toString());
 
-        NePingSubPollThreadService worker = new NePingSubPollThreadService(sb,dbHandlerService,ipRange);
+        NePingSubPollThreadService worker = new NePingSubPollThreadService(sb, dbHandlerService, ipRange);
         Global.ipListscheduledThreadPool.submit(worker);//schedule(w
     }
 

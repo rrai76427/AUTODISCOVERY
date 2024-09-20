@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -103,5 +103,5 @@ public class NodeHealth implements Serializable {
     public String toString() {
         return "shm_bo.NodeHealth[ nodeId=" + nodeId + " ]";
     }
-    
+
 }

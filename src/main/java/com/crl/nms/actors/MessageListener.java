@@ -1,7 +1,5 @@
 package com.crl.nms.actors;
 
-import akka.actor.ActorRef;
-
 import com.crl.nms.CDTAUTODISCOVERY.Global;
 import com.crl.nms.messages.IpRange;
 import com.crl.nms.service.DbHandlerService;
@@ -23,17 +21,17 @@ public class MessageListener {
 
     @Autowired
     DbHandlerService dbHandlerService;
-    ObjectMapper objectMapper=new ObjectMapper();
+    ObjectMapper objectMapper = new ObjectMapper();
 
-    @KafkaListener(topics = Global.STATRT_AUTO_DISCOVERY, groupId = "startautodiscovery",containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = Global.STATRT_AUTO_DISCOVERY, groupId = "startautodiscovery", containerFactory = "kafkaListenerContainerFactory")
     public void listenGroup(String message) {
 
-        Date dt=new Date();
-        logger.info("Received Message  Device at  " +dt+":  " + message);
+        Date dt = new Date();
+        logger.info("Received Message  Device at  " + dt + ":  " + message);
         try {
-            IpRange ipRange=objectMapper.readValue(message, IpRange.class);
-            logger.info("ipRange from "+ipRange.getFromIp()+" "+ipRange.getToIp());
-            NeFpingPollThreadService neFpingPollThreadService1=new NeFpingPollThreadService(ipRange.getFromIp(),ipRange.getToIp(),ipRange,dbHandlerService);
+            IpRange ipRange = objectMapper.readValue(message, IpRange.class);
+            logger.info("ipRange from " + ipRange.getFromIp() + " " + ipRange.getToIp());
+            NeFpingPollThreadService neFpingPollThreadService1 = new NeFpingPollThreadService(ipRange.getFromIp(), ipRange.getToIp(), ipRange, dbHandlerService);
             neFpingPollThreadService1.run();
 
 

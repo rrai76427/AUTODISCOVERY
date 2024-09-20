@@ -1,111 +1,104 @@
+package com.crl.nms.databases;
 
-
-package  com.crl.nms.databases;
-
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 //@Entity
 //@Table(name = "group_details")
 public class GroupDetails {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long Sno;
+    @Column(name = "group_type")
+    public String group_type = "";
+    @Column(name = "group_level")
+    public String group_level = "";
+    @Column(name = "group_Id")
+    public int group_Id = 0;
+    @Column(name = "group_name")
+    public String group_name = "";
+    @Column(name = "group_icon_path")
+    public String group_icon_path = "";
+    @Column(name = "latitude")
+    public String latitude = "";
+    @Column(name = "longitude")
+    public String longitude = "";
+    @Column(name = "location_name")
+    public String location_name = "";
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long Sno;
 
-	@Column(name = "group_type")
-	public String group_type = "";
+    public Long getId() {
+        return Sno;
+    }
 
-	@Column(name = "group_level")
-	public String group_level = "";
+    public void setId(Long id) {
+        this.Sno = id;
+    }
 
-	@Column(name = "group_Id")
-	public int group_Id = 0;
+    public String getGroup_type() {
+        return group_type;
+    }
 
-	@Column(name = "group_name")
-	public String group_name = "";
+    public void setGroup_type(String group_type) {
+        this.group_type = group_type;
+    }
 
-	@Column(name = "group_icon_path")
-	public String group_icon_path = "";
+    public String getGroup_level() {
+        return group_level;
+    }
 
-	@Column(name = "latitude")
-	public String latitude = "";
+    public void setGroup_level(String group_level) {
+        this.group_level = group_level;
+    }
 
-	@Column(name = "longitude")
-	public String longitude = "";
+    public int getGroup_Id() {
+        return group_Id;
+    }
 
-	@Column(name = "location_name")
-	public String location_name = "";
+    public void setGroup_Id(int group_Id) {
+        this.group_Id = group_Id;
+    }
 
-	public Long getId() {
-		return Sno;
-	}
+    public String getGroup_name() {
+        return group_name;
+    }
 
-	public void setId(Long id) {
-		this.Sno = id;
-	}
+    public void setGroup_name(String group_name) {
+        this.group_name = group_name;
+    }
 
-	public String getGroup_type() {
-		return group_type;
-	}
+    public String getGroup_icon_path() {
+        return group_icon_path;
+    }
 
-	public void setGroup_type(String group_type) {
-		this.group_type = group_type;
-	}
+    public void setGroup_icon_path(String group_icon_path) {
+        this.group_icon_path = group_icon_path;
+    }
 
-	public String getGroup_level() {
-		return group_level;
-	}
+    public String getLatitude() {
+        return latitude;
+    }
 
-	public void setGroup_level(String group_level) {
-		this.group_level = group_level;
-	}
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
 
-	public int getGroup_Id() {
-		return group_Id;
-	}
+    public String getLongitude() {
+        return longitude;
+    }
 
-	public void setGroup_Id(int group_Id) {
-		this.group_Id = group_Id;
-	}
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
 
-	public String getGroup_name() {
-		return group_name;
-	}
+    public String getLocation_name() {
+        return location_name;
+    }
 
-	public void setGroup_name(String group_name) {
-		this.group_name = group_name;
-	}
-
-	public String getGroup_icon_path() {
-		return group_icon_path;
-	}
-
-	public void setGroup_icon_path(String group_icon_path) {
-		this.group_icon_path = group_icon_path;
-	}
-
-	public String getLatitude() {
-		return latitude;
-	}
-
-	public void setLatitude(String latitude) {
-		this.latitude = latitude;
-	}
-
-	public String getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(String longitude) {
-		this.longitude = longitude;
-	}
-
-	public String getLocation_name() {
-		return location_name;
-	}
-
-	public void setLocation_name(String location_name) {
-		this.location_name = location_name;
-	}
+    public void setLocation_name(String location_name) {
+        this.location_name = location_name;
+    }
 
 }

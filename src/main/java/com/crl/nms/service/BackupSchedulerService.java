@@ -1,4 +1,5 @@
 package com.crl.nms.service;
+
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

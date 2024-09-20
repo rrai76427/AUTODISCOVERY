@@ -1,16 +1,19 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 //@Entity
 //@Table(name = "network_interface")
 public class NetworkInterface {
-	
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Sno;
-	
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Sno;
+
     @Column(name = "host_group")
     private String hostGroup;
 
@@ -25,21 +28,22 @@ public class NetworkInterface {
 
     @Column(name = "interface_operation")
     private String interfaceOperation;
-    
+
     @Column(name = "workstation_ip")
     private String workstationIp;
 
     @Column(name = "workstation_name")
     private String workstationName;
 
-    
-    public Long getId() {
-		return Sno;
-	}
 
-	public void setId(Long id) {
-		this.Sno = id;
-	}
+    public Long getId() {
+        return Sno;
+    }
+
+    public void setId(Long id) {
+        this.Sno = id;
+    }
+
     public String getHostGroup() {
         return hostGroup;
     }
@@ -71,8 +75,8 @@ public class NetworkInterface {
     public void setInterfaceId(String interfaceId) {
         this.interfaceId = interfaceId;
     }
-    
-    
+
+
     public String getWorkstationIp() {
         return workstationIp;
     }

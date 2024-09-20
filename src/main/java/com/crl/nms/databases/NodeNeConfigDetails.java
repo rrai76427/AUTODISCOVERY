@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
 
-import jakarta.persistence.*;
-
 /**
- *
  * @author meenuchhindra
  */
 @Entity
@@ -113,5 +113,5 @@ public class NodeNeConfigDetails implements Serializable {
     public String toString() {
         return "com.crl.nms.database.NodeNeConfigDetails[ nodeNeConfigDetailsPK=" + nodeNeConfigDetailsPK + " ]";
     }
-    
+
 }

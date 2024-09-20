@@ -22,6 +22,7 @@ public class IfInUnknownProtosPK {
 
     @Column(name = "updated_on")
     private Date updatedOn;
+
     public IfInUnknownProtosPK() {
     }
 }

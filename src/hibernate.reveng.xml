@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <!--
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 
@@ -40,8 +41,8 @@ made subject to such option by the copyright holder.
 Contributor(s):
 -->
 <hibernate-reverse-engineering>
-  <schema-selection match-schema="SHM_USER"/>
-  <table-filter match-name="NMS_LEVEL"/>
-  <table-filter match-name="TOPOLOGY_DETAILS"/>
-  <table-filter match-name="NODE_DEFINITION"/>
+    <schema-selection match-schema="SHM_USER"/>
+    <table-filter match-name="NMS_LEVEL"/>
+    <table-filter match-name="TOPOLOGY_DETAILS"/>
+    <table-filter match-name="NODE_DEFINITION"/>
 </hibernate-reverse-engineering>

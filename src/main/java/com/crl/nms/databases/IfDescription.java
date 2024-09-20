@@ -22,8 +22,6 @@ public class IfDescription {
     private String paramValue;
 
 
-
-
     public IfDescription() {
     }
 }

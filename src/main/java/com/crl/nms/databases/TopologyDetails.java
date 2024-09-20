@@ -1,13 +1,13 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import java.io.Serializable;
-import java.util.Date;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author Administrator
  */
 @Entity

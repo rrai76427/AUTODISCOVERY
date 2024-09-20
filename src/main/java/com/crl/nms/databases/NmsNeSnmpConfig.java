@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author Administrator
  */
 @Entity
@@ -22,7 +22,7 @@ public class NmsNeSnmpConfig implements Serializable {
     @Column(name = "UPDATED_ON")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedOn;
-    
+
     @JoinColumn(name = "PROFILE_ID", referencedColumnName = "PROFILE_ID", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private SnmpProfileTemplate snmpProfileTemplate;
@@ -91,5 +91,5 @@ public class NmsNeSnmpConfig implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.NmsNeSnmpConfig[ nmsNeSnmpConfigPK=" + nmsNeSnmpConfigPK + " ]";
     }
-    
+
 }

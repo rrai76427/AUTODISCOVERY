@@ -6,7 +6,6 @@
 package com.crl.nms.pojo;
 
 /**
- *
  * @author root
  */
 public class CurrInfoPojo {
@@ -17,7 +16,7 @@ public class CurrInfoPojo {
     public byte NmsLevelIdDB;
     public String nodeId;
     public byte nmsLevelType = 0;
-    public String selfNmsIP="0.0.0.0";
+    public String selfNmsIP = "0.0.0.0";
     public String dbDriver;
     public String dbURL;
     public String dbUser;

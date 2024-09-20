@@ -24,8 +24,6 @@ public class IfInUnknownProtos {
     private String paramValue;
 
 
-
-
     public IfInUnknownProtos() {
     }
 }

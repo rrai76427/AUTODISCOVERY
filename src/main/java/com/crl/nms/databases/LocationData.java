@@ -9,7 +9,6 @@ import org.hibernate.type.SqlTypes;
 import java.util.Date;
 
 /**
- *
  * @author Sneha Prajapati
  */
 
@@ -87,10 +86,10 @@ public class LocationData {
     private JsonNode geoFence;
 
     @Column(name = "validFrom")
-    private Date  validFrom;
+    private Date validFrom;
 
     @Column(name = "validUpto")
-    private Date  validUpto;
+    private Date validUpto;
 
     @Column(name = "validity")
     private String validity;

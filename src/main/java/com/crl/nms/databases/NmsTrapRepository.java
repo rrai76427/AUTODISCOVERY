@@ -1,11 +1,11 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -173,5 +173,5 @@ public class NmsTrapRepository implements Serializable {
     public String toString() {
         return "shm_bo.NmsTrapRepository[ nmsTrapRepositoryPK=" + nmsTrapRepositoryPK + " ]";
     }
-    
+
 }

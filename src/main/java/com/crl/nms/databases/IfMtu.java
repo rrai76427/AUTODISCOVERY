@@ -24,8 +24,6 @@ public class IfMtu {
     private String paramValue;
 
 
-
-
     public IfMtu() {
     }
 }

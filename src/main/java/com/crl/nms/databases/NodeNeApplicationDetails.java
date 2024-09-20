@@ -1,11 +1,11 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- *
  * @author meenuchhindra
  */
 @Entity
@@ -19,8 +19,8 @@ public class NodeNeApplicationDetails implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedon;
     @JoinColumns({
-        @JoinColumn(name = "TEMPLATE_ID", referencedColumnName = "TEMPLATE_ID", insertable = false, updatable = false),
-        @JoinColumn(name = "APP_NAME", referencedColumnName = "APP_NAME", insertable = false, updatable = false)})
+            @JoinColumn(name = "TEMPLATE_ID", referencedColumnName = "TEMPLATE_ID", insertable = false, updatable = false),
+            @JoinColumn(name = "APP_NAME", referencedColumnName = "APP_NAME", insertable = false, updatable = false)})
     @ManyToOne(optional = false)
     private NodeNeApplicationTemplate nodeNeApplicationTemplate;
 
@@ -83,5 +83,5 @@ public class NodeNeApplicationDetails implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.NodeNeApplicationDetails[ nodeNeApplicationDetailsPK=" + nodeNeApplicationDetailsPK + " ]";
     }
-    
+
 }

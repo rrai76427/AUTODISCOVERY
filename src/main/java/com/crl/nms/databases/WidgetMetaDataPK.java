@@ -2,11 +2,9 @@ package com.crl.nms.databases;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-
 import lombok.*;
 
 /**
- *
  * @author Sneha Prajapati
  */
 

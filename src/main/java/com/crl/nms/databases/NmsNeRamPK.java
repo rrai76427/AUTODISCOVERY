@@ -17,7 +17,7 @@ public class NmsNeRamPK {
     @Basic(optional = false)
     @Column(name = "NEKEY")
     private String nekey;
-   @Basic(optional = false)
+    @Basic(optional = false)
     @Column(name = "UPDATETIME")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatetime;

@@ -6,19 +6,18 @@
 package com.crl.nms.repository;
 
 
-import java.util.List;
-
 import com.crl.nms.databases.NodeDetail;
 import com.crl.nms.databases.NodeDetailPK;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NodeDetailRepo extends JpaRepository<NodeDetail, NodeDetailPK>{
-    
+public interface NodeDetailRepo extends JpaRepository<NodeDetail, NodeDetailPK> {
+
     List<NodeDetail> findBynodeDetailPKNodeId(String nodeId);
 }

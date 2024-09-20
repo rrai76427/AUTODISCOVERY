@@ -3,10 +3,10 @@ package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.util.Date;
 
 /**
- *
  * @author Sneha Prajapati
  */
 
@@ -63,7 +63,6 @@ public class RAMConfig {
     public void setUpdatingTime(Date updatingTime) {
         this.updatingTime = updatingTime;
     }
-
 
 
 }

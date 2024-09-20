@@ -21,6 +21,7 @@ public class IfInErrorsPK {
 
     @Column(name = "updated_on")
     private Date updatedOn;
+
     public IfInErrorsPK() {
     }
 }

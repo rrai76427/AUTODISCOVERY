@@ -3,7 +3,6 @@ package com.crl.nms.pojo;
 import lombok.*;
 
 /**
- *
  * @author Sneha Prajapati
  */
 
@@ -57,29 +56,17 @@ public class AddDeviceModel {
     public String profileId;
 
     public String profileName;
-
-    private short neId;
-
-    private int isSnmpFlag;
-
-    private short groupNo;
-
-    private String userName;
-
-    private short isIPChange;
-
-    private String threshLimit;
-
     public String templateName;
-
-    private String url;
-
     public boolean templateFlag;
-
+    private short neId;
+    private int isSnmpFlag;
+    private short groupNo;
+    private String userName;
+    private short isIPChange;
+    private String threshLimit;
+    private String url;
     private boolean autoDisc = false;
 
-    public AddDeviceModel() {
-    }
 
     public String getSnmpProfileStatus() {
         return snmpProfileStatus;

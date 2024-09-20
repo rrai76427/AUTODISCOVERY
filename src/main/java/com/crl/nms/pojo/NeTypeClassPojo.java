@@ -6,11 +6,10 @@
 package com.crl.nms.pojo;
 
 /**
- *
  * @author root
  */
 public class NeTypeClassPojo {
     public byte neType;
-    public byte pollType;    
+    public byte pollType;
     public int snmpPort;
 }

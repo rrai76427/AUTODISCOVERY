@@ -25,8 +25,6 @@ public class IfOutDiscards {
     private String paramValue;
 
 
-
-
     public IfOutDiscards() {
     }
 }

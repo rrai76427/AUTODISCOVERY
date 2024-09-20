@@ -1,13 +1,13 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -91,5 +91,5 @@ public class NmsLevel implements Serializable {
     public String toString() {
         return "shm_bo.NmsLevel[ nmsLevelPK=" + nmsLevelPK + " ]";
     }
-    
+
 }

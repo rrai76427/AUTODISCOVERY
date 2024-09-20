@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <!--
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 
@@ -40,16 +41,16 @@ made subject to such option by the copyright holder.
 Contributor(s):
 -->
 <hibernate-configuration>
-  <session-factory>
-    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
-    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-    <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.209.168:1521:orcl</property>
-    <property name="hibernate.connection.username">shm_user</property>
-    <property name="hibernate.connection.password">shm123</property>
-    <mapping class="database.NmsLevel"/>
-    <mapping class="database.NodeDefinition"/>
-    <mapping class="database.TopologyDetails"/>
-    <mapping class="database.hibernateUtil"/>
-    <mapping class="database.NmsLevelId"/>
-  </session-factory>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.209.168:1521:orcl</property>
+        <property name="hibernate.connection.username">shm_user</property>
+        <property name="hibernate.connection.password">shm123</property>
+        <mapping class="database.NmsLevel"/>
+        <mapping class="database.NodeDefinition"/>
+        <mapping class="database.TopologyDetails"/>
+        <mapping class="database.hibernateUtil"/>
+        <mapping class="database.NmsLevelId"/>
+    </session-factory>
 </hibernate-configuration>

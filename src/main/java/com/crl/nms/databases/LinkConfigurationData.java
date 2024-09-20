@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlTransient;
 
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -159,5 +159,5 @@ public class LinkConfigurationData implements Serializable {
     public String toString() {
         return "shm_bo.LinkConfigurationData[ nodeId=" + nodeId + " ]";
     }
-    
+
 }

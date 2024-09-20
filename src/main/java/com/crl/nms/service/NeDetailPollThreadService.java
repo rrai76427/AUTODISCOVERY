@@ -39,7 +39,6 @@ import org.springframework.stereotype.Service;
 
 */
 /**
- *
  * @author root
  *//*
 
@@ -342,7 +341,8 @@ public class NeDetailPollThreadService extends Thread implements Constants {
     private StringBuilder sb;
     private IpRange ipRange;
 
-    public NeDetailPollThreadService() {}
+    public NeDetailPollThreadService() {
+    }
 
     public NeDetailPollThreadService(StringBuilder sb, DbHandlerService dbHandlerService, IpRange ipRange) {
         this.sb = sb;
@@ -413,34 +413,40 @@ public class NeDetailPollThreadService extends Thread implements Constants {
                 if (result.contains("Nmap scan report for")) {
                     String[] data = result.split("Nmap scan report for ");
                     neipStr = extractIpAddress(data);
-                    nedescStr = extractHostName(data,neipStr);
+                    String[] parts = neipStr.split("\\s+|\\(|\\)");
+                    if (parts.length >= 3) {
+                        nedescStr = parts[0];
+                        neipStr = parts[2].trim();
+                    }
+                    System.out.println("Hostname: " + nedescStr);
+                    System.out.println("IP Address: " + neipStr);
                     logger.debug("Hostname: {}", nedescStr);
                     logger.debug("IP Address: {}", neipStr);
                 }
-                if(result.contains("scanned ports")){
-                    hwType=Constants.SWITCH;
+                if (result.contains("scanned ports")) {
+                    hwType = Constants.SWITCH;
                 }
             }
 
             if (hwType == Constants.SERVER) {
-                if (nedescStr.length()==0){
-                    nedescStr="SERER_"+neipStr.replace('.','_');
+                if (nedescStr.length() == 0) {
+                    nedescStr = "SERER_" + neipStr.replace('.', '_');
                 }
                 // Handle server-specific logic here
                 logger.info("Detected a server: {}", nedescStr);
                 // You can add more server-specific processing here
             }
             if (hwType == Constants.WS) {
-                if (nedescStr.length()==0){
-                    nedescStr="WORKSTATION_"+neipStr.replace('.','_');
+                if (nedescStr.length() == 0) {
+                    nedescStr = "WORKSTATION_" + neipStr.replace('.', '_');
                 }
                 // Handle server-specific logic here
                 logger.info("Detected a WORKSTATION: {}", neipStr);
                 // You can add more server-specific processing here
             }
             if (hwType == Constants.SWITCH) {
-                if (nedescStr.length()==0){
-                    nedescStr="SWITCH_"+neipStr.replace('.','_');
+                if (nedescStr.length() == 0) {
+                    nedescStr = "SWITCH_" + neipStr.replace('.', '_');
                 }
                 // Handle server-specific logic here
                 logger.info("Detected a switch: {}", nedescStr);
@@ -448,8 +454,8 @@ public class NeDetailPollThreadService extends Thread implements Constants {
             }
 
             if (hwType == Constants.PRINTER) {
-                if (nedescStr.length()==0){
-                    nedescStr="PRINTER_"+neipStr.replace('.','_');
+                if (nedescStr.length() == 0) {
+                    nedescStr = "PRINTER_" + neipStr.replace('.', '_');
                 }
                 // Handle server-specific logic here
                 logger.info("Detected a printer: {}", nedescStr);
@@ -529,14 +535,15 @@ public class NeDetailPollThreadService extends Thread implements Constants {
     }
 
     private String extractIpAddress(String[] data) {
+
         if (data.length >= 2) {
             return data[1].trim();
         }
         return "";
     }
 
-    private String extractHostName(String[] data,String neipStr ) {
-        String  nedescStr="";
+/*    private String extractHostName(String[] data, String neipStr) {
+        String nedescStr = "";
         String[] parts = neipStr.split("\\s+|\\(|\\)");
         if (parts.length >= 3) {
             nedescStr = parts[0];
@@ -547,5 +554,5 @@ public class NeDetailPollThreadService extends Thread implements Constants {
         }
 
         return nedescStr;
-    }
+    }*/
 }

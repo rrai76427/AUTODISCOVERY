@@ -7,10 +7,7 @@ package com.crl.nms.messages;
  */
 
 
-import org.springframework.context.annotation.Bean;
-
 /**
- *
  * @author Sneha Prajapati
  */
 public class IpRange {
@@ -61,34 +58,20 @@ public class IpRange {
     public String profileId;
 
     public String profileName;
-
-    private short neId;
-
-    private int isSnmpFlag;
-
-    private short groupNo;
-
-    private String userName;
-
-    private short isIPChange;
-
-    private String threshLimit;
-
     public String templateName;
-
-    private String url;
-
     public boolean templateFlag;
-
+    private short neId;
+    private int isSnmpFlag;
+    private short groupNo;
+    private String userName;
+    private short isIPChange;
+    private String threshLimit;
+    private String url;
     private boolean autoDisc = false;
-
-    public int isSnmpFlag() {
-        return isSnmpFlag;
-    }
-
 
     public IpRange() {
     }
+
 
     public IpRange(String fromIp, String toIp) {
         this.fromIp = fromIp;
@@ -130,6 +113,10 @@ public class IpRange {
         this.url = url;
         this.templateFlag = templateFlag;
         this.autoDisc = autoDisc;
+    }
+
+    public int isSnmpFlag() {
+        return isSnmpFlag;
     }
 
     public String getFromIp() {

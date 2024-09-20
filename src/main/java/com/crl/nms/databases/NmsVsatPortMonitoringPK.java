@@ -1,10 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
 import java.io.Serializable;
 
-import jakarta.persistence.*;
-
 /**
- *
  * @author Administrator
  */
 @Embeddable
@@ -69,5 +71,5 @@ public class NmsVsatPortMonitoringPK implements Serializable {
     public String toString() {
         return "javaapplication1.NmsVsatPortMonitoringPK[ nodeId=" + nodeId + ", parentNodeId=" + parentNodeId + " ]";
     }
-    
+
 }

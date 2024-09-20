@@ -42,9 +42,4 @@ public class SysLogMessages {
     private String messageType;
 
 
-
-
-
-
-
 }

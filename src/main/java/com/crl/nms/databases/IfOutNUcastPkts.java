@@ -24,8 +24,6 @@ public class IfOutNUcastPkts {
     private String paramValue;
 
 
-
-
     public IfOutNUcastPkts() {
     }
 }

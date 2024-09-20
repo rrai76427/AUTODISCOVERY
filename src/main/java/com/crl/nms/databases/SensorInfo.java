@@ -1,12 +1,13 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.List;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlTransient;
+
+import java.io.Serializable;
+import java.util.List;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -81,5 +82,5 @@ public class SensorInfo implements Serializable {
     public String toString() {
         return "shm_bo.SensorInfo[ sensorType=" + sensorType + " ]";
     }
-    
+
 }

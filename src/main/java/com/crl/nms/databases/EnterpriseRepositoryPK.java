@@ -1,12 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import java.io.Serializable;
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
+import java.io.Serializable;
+
 /**
- *
  * @author meenuchhindra
  */
 @Embeddable
@@ -71,5 +71,5 @@ public class EnterpriseRepositoryPK implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.EnterpriseRepositoryPK[ trapOid=" + trapOid + ", templateName=" + templateName + " ]";
     }
-    
+
 }

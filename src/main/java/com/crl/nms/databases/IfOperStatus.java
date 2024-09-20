@@ -24,7 +24,6 @@ public class IfOperStatus {
     private String paramValue;
 
 
-
     public IfOperStatus() {
     }
 }

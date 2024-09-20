@@ -1,6 +1,4 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.math.BigDecimal;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
@@ -9,8 +7,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+import java.math.BigDecimal;
+
 /**
- *
  * @author satwikanmol
  */
 @Entity
@@ -32,10 +32,10 @@ public class NmsNeRam implements Serializable {
     private BigDecimal ramPercentusage;
 
 
-/*    @Basic(optional = false)
-    @Column(name = "UPDATETIME")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date updatetime;*/
+    /*    @Basic(optional = false)
+        @Column(name = "UPDATETIME")
+        @Temporal(TemporalType.TIMESTAMP)
+        private Date updatetime;*/
     @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private NmsNeDetail nmsNeDetail;
@@ -125,5 +125,5 @@ public class NmsNeRam implements Serializable {
     public String toString() {
         return "shm_bo.NmsNeRam[ nekey=" + nekey + " ]";
     }*/
-    
+
 }

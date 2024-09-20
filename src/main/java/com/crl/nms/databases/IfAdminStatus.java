@@ -23,8 +23,6 @@ public class IfAdminStatus {
     private String paramValue;
 
 
-
-
     public IfAdminStatus() {
     }
 }

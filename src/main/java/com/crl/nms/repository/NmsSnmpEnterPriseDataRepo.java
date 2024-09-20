@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface NmsSnmpEnterPriseDataRepo  extends JpaRepository<NmsSnmpEnterPriseData, NmsSnmpEnterPriseDataPK> {
+public interface NmsSnmpEnterPriseDataRepo extends JpaRepository<NmsSnmpEnterPriseData, NmsSnmpEnterPriseDataPK> {
 
     List<NmsSnmpEnterPriseData> findBynmsSnmpEnterPriseDataPKNeKeyOrderByUpdatedOnDesc(String nekey);
 }

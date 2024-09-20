@@ -69,11 +69,11 @@ public class DbHandlerService {
 
    */
 /* public String getNeDesc(String neKey) {
-       *//*
-*/
+ *//*
+ */
 /* String query = new StringBuilder("select NE_DESC from NMS_NE_DETAIL where NEKEY='").append(neKey).append("'").toString();
         List neDesc = selectSqlQuery(query);*//*
-*/
+ */
 /*
 
         List<String> result = nmsNeDetailrepo.findNeDescBynekey(neKey);
@@ -98,10 +98,10 @@ public class DbHandlerService {
     }*//*
 
 
-  */
+ */
 /*  public List getHwList() {
-        *//*
-*/
+ *//*
+ */
 /* NEKEY					   NOT NULL VARCHAR2(30)
         AGENCY_ID				   NOT NULL NUMBER(5)
          NE_TYPE				   NOT NULL NUMBER(3)
@@ -115,7 +115,7 @@ public class DbHandlerService {
         SNMP_VERSION					    NUMBER(2)
          SNMP_PROFILE_STATUS				    NUMBER(2)
          HARDWARE_ID				   NOT NULL NUMBER(10*//*
-*/
+ */
 /*
         List<Map<String, Object>> resultList = new ArrayList<>();
         Connection connection = null;
@@ -173,7 +173,7 @@ public class DbHandlerService {
 
 
 
-   */
+ */
 /* public boolean executeSqlQuery(String query) {
         boolean flag = true;
 
@@ -204,7 +204,7 @@ public class DbHandlerService {
     }*//*
 
 
-  */
+ */
 /*  public List selectSqlQuery(String query) {
 
         List resultList = new ArrayList();
@@ -236,7 +236,7 @@ public class DbHandlerService {
     }*//*
 
 
-   */
+ */
 /* byte[] unsignedShortToByte(short myInt) {
         byte[] bytes = new byte[2];
         bytes[0] = (byte) (myInt);
@@ -246,7 +246,7 @@ public class DbHandlerService {
     }*//*
 
 
-*/
+ */
 /*    public void loadAgencyHwListFromDB() {
         try {
             // Global.neHashMap.clear();
@@ -262,7 +262,7 @@ public class DbHandlerService {
     }*//*
 
 
-   */
+ */
 /* void startAgencyHwPoll(List<Map<String, Object>> agencyHwlist) {
         try {
             if (agencyHwlist != null && !agencyHwlist.isEmpty()) {
@@ -606,20 +606,20 @@ public class DbHandlerService {
        */
 /* public void deleteNedetail (String Src_ip){
 
-               *//*
-*/
+ *//*
+ */
 /* String query = new StringBuilder("delete from nms_ne_detail where ne_ip='")
                         .append(Src_ip).append("'")
                         .toString();
                 insertQuery(query);*//*
-*/
+ */
 /*
 
             nmsNeDetailrepo.deleteByNeIp(Src_ip);
         }*//*
 
 
-     */
+ */
 /*   private boolean executeQuery (String query){
             boolean flag = false;
             // main.java.com.crl.nms.lldpdiscovery.HibernateWrapper hibernateWrapper = new main.java.com.crl.nms.lldpdiscovery.HibernateWrapper();
@@ -644,10 +644,13 @@ package com.crl.nms.service;
 import com.crl.nms.CDTAUTODISCOVERY.Constants;
 import com.crl.nms.CDTAUTODISCOVERY.Global;
 import com.crl.nms.databases.*;
+import com.crl.nms.messages.IpRange;
 import com.crl.nms.pojo.AddDeviceModel;
 import com.crl.nms.pojo.NeObjectPojo;
+import com.crl.nms.repository.AuthenticationProtocolEnumRepo;
 import com.crl.nms.repository.NeConnectivityRepo;
 import com.crl.nms.repository.NmsNeDetailRepository;
+import com.crl.nms.repository.PrivacyProtocolEnumRepo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -667,13 +670,15 @@ public class DbHandlerService {
     private static final Logger logger = LoggerFactory.getLogger(DbHandlerService.class);
 
 
-    AddDeviceModel addDeviceModel=new AddDeviceModel();
+    AddDeviceModel addDeviceModel = new AddDeviceModel();
+    @Autowired
+    AuthenticationProtocolEnumRepo authenticationProtocolEnumRepo;
+    @Autowired
+    PrivacyProtocolEnumRepo privacyProtocolEnumRepo;
     @Autowired
     private NmsNeDetailRepository nmsNeDetailRepo;
-
     @Autowired
     private NeConnectivityRepo neConnectivityRepo;
-
     @Autowired
     private KafkaTemplate<String, String> kafkaJSONStringMsgSender;
 
@@ -748,17 +753,17 @@ public class DbHandlerService {
 
 
             entity.setHddLimit(Short.valueOf(Constants.LIMIT));
-            addDeviceModel.setThreshLimit(String.valueOf(Constants.LIMIT));
+           // addDeviceModel.setThreshLimit(String.valueOf(Constants.LIMIT));
 
             entity.setIsCriticalServer((short) ACTIVE);
-            addDeviceModel.setIsIPChange((short) ACTIVE);
+           // addDeviceModel.setIsIPChange(Short.parseShort("0"));
 
 
             entity.setUpdatedBy("AUTODISCOVERY");
             addDeviceModel.setUserName("AUTODISCOVERY");
 
             entity.setNeDesc(nedescStr.trim());
-            addDeviceModel.setNeGroupNo(nedescStr);
+            addDeviceModel.setDeviceName(nedescStr);
 
 
             entity.setNeDowntime(new Date());
@@ -767,32 +772,32 @@ public class DbHandlerService {
 
 
             entity.setNeId((short) neCount);
-            addDeviceModel.setNeId(neCount);
+           // addDeviceModel.setNeId(neCount);
 
             entity.setNeIp(neipStr.trim());
             addDeviceModel.setDeviceIP(neipStr.trim());
 
 
-
             entity.setNeStatus((short) ACTIVE);
-
 
 
             entity.setNeUptime(new Date());
 
 
             entity.setNodeId(1001);
-            addDeviceModel.setNodeId(String.valueOf(1001));
+           // addDeviceModel.setNodeId(String.valueOf(1001));
 
             entity.setRamLimit(Short.valueOf(Constants.LIMIT));
 
 
             entity.setSnmpProfileStatus(Short.valueOf((short) ACTIVE));
-            addDeviceModel.setSnmpProfileStatus(String.valueOf(ACTIVE));
+          //  addDeviceModel.setSnmpProfileStatus(String.valueOf(ACTIVE));
+
+         //   addDeviceModel.setIsSnmpFlag(1);
 
 
             entity.setSnmpVersion(Short.valueOf((short) ACTIVE));
-            addDeviceModel.setSnmpVersion(String.valueOf(ACTIVE));
+          //  addDeviceModel.setSnmpVersion(String.valueOf(ACTIVE));
 
 
             entity.setXPos("100");
@@ -803,6 +808,7 @@ public class DbHandlerService {
             NmsNeTypes nmsNeTypes = new NmsNeTypes();
             nmsNeTypes.setNeType(hwType);
             entity.setNeType(nmsNeTypes);
+            addDeviceModel.setDeviceType(String.valueOf(hwType));
 
 
             NodeDefinition nodeDefinition = new NodeDefinition();
@@ -811,8 +817,8 @@ public class DbHandlerService {
 
 
             nmsNeDetailRepo.save(entity);
-           // sendMsgToKAFKA("AutoDiscovery Completed Successfully", "autodiscoverycompleted");
-            sendMsgToKAFKA(addDeviceModel, "autodiscoverycompleted");
+            // sendMsgToKAFKA("AutoDiscovery Completed Successfully", "autodiscoverycompleted");
+            sendMsgToKAFKA(addDeviceModel, Global.ADD_DEVICE);
 
         }
     }
@@ -872,5 +878,27 @@ public class DbHandlerService {
         } catch (Exception e) {
             logger.error("Failed to send message to Kafka: {}", e.getMessage());
         }
+    }
+
+    public Optional<AuthenticationProtocolEnum> findAuthenticationProtocolEnum(IpRange ipRange) {
+        try {
+            Optional<AuthenticationProtocolEnum> authenticationProtocolEnum = authenticationProtocolEnumRepo.findById(Integer.valueOf(ipRange.getAuthProtocol()));
+            return authenticationProtocolEnum;
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+        return null;
+    }
+
+    public Optional<PrivacyProtocolEnum> findPrivacyProtocolEnum(IpRange ipRange) {
+
+        try {
+            Optional<PrivacyProtocolEnum> privacyProtocolEnum = privacyProtocolEnumRepo.findById(Integer.valueOf(ipRange.getAuthProtocol()));
+            return privacyProtocolEnum;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+
     }
 }

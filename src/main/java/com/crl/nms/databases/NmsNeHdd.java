@@ -1,12 +1,14 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import java.io.Serializable;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+import java.io.Serializable;
 
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -159,5 +161,5 @@ public class NmsNeHdd implements Serializable {
     public String toString() {
         return "shm_bo.NmsNeHdd[ hddkey=" + hddkey + " ]";
     }*/
-    
+
 }

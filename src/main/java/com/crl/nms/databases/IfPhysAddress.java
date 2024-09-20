@@ -24,8 +24,6 @@ public class IfPhysAddress {
     private String paramValue;
 
 
-
-
     public IfPhysAddress() {
     }
 }

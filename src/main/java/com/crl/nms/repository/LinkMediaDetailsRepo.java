@@ -11,9 +11,8 @@ import com.crl.nms.databases.LinkMediaDetailsPK;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- *
  * @author Sneha Prajapati
  */
-public interface LinkMediaDetailsRepo extends JpaRepository<LinkMediaDetails, LinkMediaDetailsPK>{
-    
+public interface LinkMediaDetailsRepo extends JpaRepository<LinkMediaDetails, LinkMediaDetailsPK> {
+
 }

@@ -6,20 +6,19 @@
 package com.crl.nms.repository;
 
 
-import java.util.List;
-
 import com.crl.nms.databases.NeConnectivity;
 import com.crl.nms.databases.NeConnectivityPK;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 /**
- *
  * @author Sneha Prajapati
  */
-public interface NeConnectivityRepo extends JpaRepository<NeConnectivity, NeConnectivityPK>{
-    
+public interface NeConnectivityRepo extends JpaRepository<NeConnectivity, NeConnectivityPK> {
+
     List<NeConnectivity> findByneConnectivityPKDestNekey(String destNekey);
-    
+
     List<NeConnectivity> findBysrcNodeid(String srcNodeid);
 
     List<NeConnectivity> findByDestNodeid(String destNodeid);

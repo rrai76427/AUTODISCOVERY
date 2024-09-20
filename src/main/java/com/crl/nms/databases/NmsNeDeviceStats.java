@@ -11,7 +11,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- *
  * @author satwikanmol
  */
 @Entity
@@ -70,13 +69,6 @@ public class NmsNeDeviceStats implements Serializable {
     @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private NmsNeDetail nmsNeDetail;
-
-
-
-
-
-
-
 
 
 }

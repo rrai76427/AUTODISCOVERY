@@ -24,8 +24,6 @@ public class IfInDiscards {
     private String paramValue;
 
 
-
-
     public IfInDiscards() {
     }
 }

@@ -1,25 +1,26 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlTransient;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Date;
+
 /**
- *
  * @author meenuchhindra
  */
 @Entity
 @Table(name = "NODE_NE_APPLICATION_TEMPLATE")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "NodeNeApplicationTemplate.findAll", query = "SELECT n FROM NodeNeApplicationTemplate n"),
-    @NamedQuery(name = "NodeNeApplicationTemplate.findByTemplateId", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.nodeNeApplicationTemplatePK.templateId = :templateId"),
-    @NamedQuery(name = "NodeNeApplicationTemplate.findByAppName", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.nodeNeApplicationTemplatePK.appName = :appName"),
-    @NamedQuery(name = "NodeNeApplicationTemplate.findByAppPath", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.appPath = :appPath"),
-    @NamedQuery(name = "NodeNeApplicationTemplate.findByUpdatedOn", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.updatedOn = :updatedOn"),
-    @NamedQuery(name = "NodeNeApplicationTemplate.findByTemplateName", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.templateName = :templateName")})
+        @NamedQuery(name = "NodeNeApplicationTemplate.findAll", query = "SELECT n FROM NodeNeApplicationTemplate n"),
+        @NamedQuery(name = "NodeNeApplicationTemplate.findByTemplateId", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.nodeNeApplicationTemplatePK.templateId = :templateId"),
+        @NamedQuery(name = "NodeNeApplicationTemplate.findByAppName", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.nodeNeApplicationTemplatePK.appName = :appName"),
+        @NamedQuery(name = "NodeNeApplicationTemplate.findByAppPath", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.appPath = :appPath"),
+        @NamedQuery(name = "NodeNeApplicationTemplate.findByUpdatedOn", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.updatedOn = :updatedOn"),
+        @NamedQuery(name = "NodeNeApplicationTemplate.findByTemplateName", query = "SELECT n FROM NodeNeApplicationTemplate n WHERE n.templateName = :templateName")})
 public class NodeNeApplicationTemplate implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -117,5 +118,5 @@ public class NodeNeApplicationTemplate implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.NodeNeApplicationTemplate[ nodeNeApplicationTemplatePK=" + nodeNeApplicationTemplatePK + " ]";
     }
-    
+
 }

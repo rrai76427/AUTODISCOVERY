@@ -1,12 +1,13 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlTransient;
+
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlTransient;
 /**
- *
  * @author meenuchhindra
  */
 @Entity
@@ -15,7 +16,7 @@ import jakarta.xml.bind.annotation.XmlTransient;
 public class NodeNeTemplate implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "NODE_NE_TEMPLATE_ID_SEQ_NO")
     @SequenceGenerator(sequenceName = "NODE_NE_TEMPLATE_ID_SEQ_NO", initialValue = 1, allocationSize = 1, name = "NODE_NE_TEMPLATE_ID_SEQ_NO")
     @Id
@@ -130,5 +131,5 @@ public class NodeNeTemplate implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.NodeNeTemplate[ templateId=" + templateId + " ]";
     }
-    
+
 }

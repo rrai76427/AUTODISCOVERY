@@ -1,15 +1,18 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-import jakarta.xml.bind.annotation.XmlTransient;
-import lombok.*;
 
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -114,10 +117,10 @@ public class NmsNeDetail implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nekey")
     private List<NmsNeCpu> nmsNeCpuList;
-    
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nmsNeDetail")
     private List<NmsNeRam> nmsNeRam;
-    
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nmsNeDetail")
     private List<NmsNeProcesses> nmsNeProcessesList;
 
@@ -145,7 +148,7 @@ public class NmsNeDetail implements Serializable {
         this.nekey = nekey;
     }
 
-    public NmsNeDetail(String nekey, int nodeId, short neId, long hardwareId,short isCriticalServer) {
+    public NmsNeDetail(String nekey, int nodeId, short neId, long hardwareId, short isCriticalServer) {
         this.nekey = nekey;
         this.nodeId = nodeId;
         this.neId = neId;
@@ -326,6 +329,7 @@ public class NmsNeDetail implements Serializable {
     public void setNmsPerfIftableList(List<NmsPerfIftable> nmsPerfIftableList) {
         this.nmsPerfIftableList = nmsPerfIftableList;
     }
+
     @XmlTransient
     public List<NmsNeHdd> getNmsNeHddList() {
         return nmsNeHddList;
@@ -342,6 +346,7 @@ public class NmsNeDetail implements Serializable {
     public void setNmsDeviceLink(NmsDeviceLink nmsDeviceLink) {
         this.nmsDeviceLink = nmsDeviceLink;
     }
+
     @XmlTransient
     public List<NmsNeCpu> getNmsNeCpuList() {
         return nmsNeCpuList;

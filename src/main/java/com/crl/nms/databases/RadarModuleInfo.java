@@ -1,12 +1,13 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.util.Collection;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlTransient;
+
+import java.io.Serializable;
+import java.util.Collection;
+
 /**
- *
  * @author meenuchhindra
  */
 @Entity

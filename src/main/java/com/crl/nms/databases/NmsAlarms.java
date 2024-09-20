@@ -1,15 +1,18 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.*;
-
 /**
- *
  * @author meenuchhindra
  */
 @Entity
@@ -23,7 +26,7 @@ public class NmsAlarms implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-//    @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
+    //    @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
 //    @ManyToOne(optional = false)
 //    private NmsNeDetail nekey;
     @Column(name = "NEKEY")
@@ -140,5 +143,5 @@ public class NmsAlarms implements Serializable {
     public String toString() {
         return "com.nms.crl.bo.NmsAlarms[ tagno=" + tagno + " ]";
     }
-    
+
 }

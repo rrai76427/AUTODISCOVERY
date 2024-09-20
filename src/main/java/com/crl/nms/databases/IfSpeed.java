@@ -24,8 +24,6 @@ public class IfSpeed {
     private String paramValue;
 
 
-
-
     public IfSpeed() {
     }
 }

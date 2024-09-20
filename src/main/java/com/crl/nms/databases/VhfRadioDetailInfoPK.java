@@ -1,10 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
 import java.io.Serializable;
 
-import jakarta.persistence.*;
-
 /**
- *
  * @author ashwinimehta
  */
 @Embeddable

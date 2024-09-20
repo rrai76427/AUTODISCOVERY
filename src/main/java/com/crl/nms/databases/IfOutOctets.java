@@ -24,8 +24,6 @@ public class IfOutOctets {
     private String paramValue;
 
 
-
-
     public IfOutOctets() {
     }
 }

@@ -23,8 +23,6 @@ public class IfInUcastPkts {
     private String paramValue;
 
 
-
-
     public IfInUcastPkts() {
     }
 }

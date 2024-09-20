@@ -1,11 +1,11 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+
 /**
- *
  * @author meenuchhindra
  */
 @Entity
@@ -69,5 +69,5 @@ public class RadarBiteClassification implements Serializable {
     public String toString() {
         return "com.nms.crl.bo.RadarBiteClassification[ biteId=" + biteId + " ]";
     }
-    
+
 }

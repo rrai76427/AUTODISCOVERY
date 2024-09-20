@@ -1,10 +1,12 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
+
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
 import java.io.Serializable;
 
-import jakarta.persistence.*;
-
 /**
- *
  * @author ashwinimehta
  */
 @Embeddable
@@ -12,10 +14,10 @@ public class NmsNeProcessesPK implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "NEKEY")
-    private String nekey="";
+    private String nekey = "";
     @Basic(optional = false)
     @Column(name = "PROCNAME")
-    private String procname="";
+    private String procname = "";
 
     public NmsNeProcessesPK() {
     }
@@ -69,5 +71,5 @@ public class NmsNeProcessesPK implements Serializable {
     public String toString() {
         return "shm_bo.NmsNeProcessesPK[ nekey=" + nekey + ", procname=" + procname + " ]";
     }
-    
+
 }

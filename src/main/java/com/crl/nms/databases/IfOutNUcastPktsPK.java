@@ -22,6 +22,7 @@ public class IfOutNUcastPktsPK {
 
     @Column(name = "updated_on")
     private Date updatedOn;
+
     public IfOutNUcastPktsPK() {
     }
 }

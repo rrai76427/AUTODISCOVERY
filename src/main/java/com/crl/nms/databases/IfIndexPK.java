@@ -21,6 +21,7 @@ public class IfIndexPK {
 
     @Column(name = "updated_on")
     private Date updatedOn;
+
     public IfIndexPK() {
     }
 }

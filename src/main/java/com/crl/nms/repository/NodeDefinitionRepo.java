@@ -11,10 +11,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NodeDefinitionRepo extends JpaRepository<NodeDefinition, Integer>{
-    
+public interface NodeDefinitionRepo extends JpaRepository<NodeDefinition, Integer> {
+
 }

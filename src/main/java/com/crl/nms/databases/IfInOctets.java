@@ -24,8 +24,6 @@ public class IfInOctets {
     private String paramValue;
 
 
-
-
     public IfInOctets() {
     }
 }

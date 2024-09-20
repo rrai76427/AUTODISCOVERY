@@ -23,8 +23,6 @@ public class IfIndex {
     private String paramValue;
 
 
-
-
     public IfIndex() {
     }
 }

@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
 @Data
@@ -33,17 +34,17 @@ public class LineData {
     private Date createdOn;
 
     @Column(name = "VALID_FROM")
-    private Date  validFrom;
+    private Date validFrom;
 
     @Column(name = "VALID_UPTO")//, columnDefinition = "jsonb"
-    private Date  validUpto;
+    private Date validUpto;
 
     @Column(name = "VALIDITY")
     private String validity;
     @Column(name = "COLOR")
-    private String  color;
+    private String color;
     @Column(name = "UPDATED_BY")
-    private String  updatedBy;
+    private String updatedBy;
     @Column(name = "UPDATED_ON")
     private Date updatedOn;
 

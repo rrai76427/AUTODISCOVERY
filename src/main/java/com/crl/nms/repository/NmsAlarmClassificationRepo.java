@@ -6,20 +6,19 @@
 package com.crl.nms.repository;
 
 
-import java.util.List;
-
 import com.crl.nms.databases.NmsAlarmClassification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NmsAlarmClassificationRepo extends JpaRepository<NmsAlarmClassification, Short>{
+public interface NmsAlarmClassificationRepo extends JpaRepository<NmsAlarmClassification, Short> {
     List<NmsAlarmClassification> findBydescription(String alarmName);
-    
+
     List<NmsAlarmClassification> findByinfoEventFlg(Short eventFlag);
 
 }

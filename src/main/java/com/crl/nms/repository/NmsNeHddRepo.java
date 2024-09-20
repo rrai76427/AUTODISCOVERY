@@ -6,18 +6,17 @@
 package com.crl.nms.repository;
 
 
-import java.util.List;
-
 import com.crl.nms.databases.NmsNeHdd;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface NmsNeHddRepo extends JpaRepository<NmsNeHdd, String>{
-    
+public interface NmsNeHddRepo extends JpaRepository<NmsNeHdd, String> {
+
     List<NmsNeHdd> findBynekeyNekey(String nekey);
 }

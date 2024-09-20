@@ -12,9 +12,6 @@ package com.crl.nms.service;
 import com.crl.nms.CDTAUTODISCOVERY.Constants;
 import com.crl.nms.CDTAUTODISCOVERY.Global;
 import com.crl.nms.lldpTable.lldpRemTable;
-//import com.crl.nms.lldpdiscovery.Constant;
-
-
 import com.crl.nms.messages.IpRange;
 import com.crl.nms.repository.NmsNeDetailRepository;
 import com.crl.nms.repository.NmsNeSnmpConfigRepo;
@@ -25,7 +22,9 @@ import org.springframework.stereotype.Service;
 
 import java.io.DataInputStream;
 import java.io.InputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -33,39 +32,21 @@ import java.util.regex.Pattern;
 
 
 /**
- *
  * @author root
  */
 @Service
 public class OperationSwitchService {
 
 
-
-    @Autowired
-    NmsNeDetailRepository nmsNeDetailRepo;
-
-    @Autowired
-    NmsNeSnmpConfigRepo nmsNeSnmpConfigRepo;
-
-    // @Autowired
-    private DbHandlerService dbHandlerService;
-    IpRange ipRange;
-    //StringBuilder sb;
-
     // private static final org.apache.log4j.Logger logger =
     // org.apache.log4j.Logger.getLogger(NeDetailPollThread.class);
     private static final Logger logger = LoggerFactory.getLogger(OperationSwitchService.class);
-
-
-  public OperationSwitchService() {
-
-    }
-  public OperationSwitchService(DbHandlerService dbHandlerService, IpRange ipRange) {
-        this.dbHandlerService = dbHandlerService;
-        this.ipRange=ipRange;
-        // dbObj = new DbHandlerService();
-    }
-
+    @Autowired
+    NmsNeDetailRepository nmsNeDetailRepo;
+    @Autowired
+    NmsNeSnmpConfigRepo nmsNeSnmpConfigRepo;
+    IpRange ipRange;
+    //StringBuilder sb;
     ArrayList<Object> lldpCatchIfIndex = new ArrayList();
     ArrayList<Object> lldpCatchDeviceIndex = new ArrayList();
     ArrayList<Object> lldpCatchAddressType = new ArrayList();
@@ -75,19 +56,28 @@ public class OperationSwitchService {
     ArrayList<Object> lldpCatchDevicePortNo = new ArrayList();
     String[] valuelist, value;
     String localmacaddress = "";
-
     String userName = "crlgad";
     DataInputStream din;
     InputStream is = null;
     int portCnt = 0;
-   // private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(OperationSwitch.class);
-  // private static final Logger logger = LoggerFactory.getLogger(OperationSwitchService.class);
+    // @Autowired
+    private DbHandlerService dbHandlerService;
+    public OperationSwitchService() {
 
-   public void fillSwitchInfo(String ipAddress, int portCnt, final ConcurrentHashMap<String, String> oidhp) {
+    }
+    public OperationSwitchService(DbHandlerService dbHandlerService, IpRange ipRange) {
+        this.dbHandlerService = dbHandlerService;
+        this.ipRange = ipRange;
+        // dbObj = new DbHandlerService();
+    }
+    // private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(OperationSwitch.class);
+    // private static final Logger logger = LoggerFactory.getLogger(OperationSwitchService.class);
+
+    public void fillSwitchInfo(String ipAddress, int portCnt, final ConcurrentHashMap<String, String> oidhp) {
         //  return false;
-       if (ipAddress.equals("192.168.99.12")){
+        if (ipAddress.equals("192.168.99.12")) {
 
-       }
+        }
         try {
             //  DbHandler db = new DbHandler();
             //    db.UpdateData(ipAddress, ne_macStr, nedescStr, neHostNameStr, hwType, hwSubType, neOperSys);
@@ -108,33 +98,33 @@ public class OperationSwitchService {
         if (s != null) {
             localmacaddress = s;
             System.out.println("localmacaddress" + localmacaddress);
-            Global.ne_MAC_IP_HashMap.put(localmacaddress,ipAddress);
+            Global.ne_MAC_IP_HashMap.put(localmacaddress, ipAddress);
 
             //  main.java.com.crl.nms.HibernateDbConn.Global.ne_mac_ipAddress_HashMap.put(localmacaddress, ipAddress);
         }
 
-       String lldpRemChassisIdSubtype;
-       String lldpRemChassisId ;
-       String lldpRemPortIdSubtype;
-       String lldpRemPortId;
-       String lldpRemPortDesc ;
-       String lldpRemSysName;
-       String lldpRemSysDesc ;
-       String lldpRemSysCapSupported ;
-       String lldpRemSysCapEnabled ;
+        String lldpRemChassisIdSubtype;
+        String lldpRemChassisId;
+        String lldpRemPortIdSubtype;
+        String lldpRemPortId;
+        String lldpRemPortDesc;
+        String lldpRemSysName;
+        String lldpRemSysDesc;
+        String lldpRemSysCapSupported;
+        String lldpRemSysCapEnabled;
 
 
-       String lldpRemPortIdSubtypevalue;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemChassisIdvalue ;
-       String lldpRemPortIdvalue ;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemPortDescvalue;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemSysDescvalue ;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemSysNamevalue ;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemSysCapSupportedvalue ;//DEST MAC ADD OR IP ADDRESSS
-       String lldpRemSysCapEnabledvalue ;//DEST MAC ADD OR IP ADDRESSS
-       lldpRemTable lldpRemTableEntry = new lldpRemTable();
+        String lldpRemPortIdSubtypevalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemChassisIdvalue;
+        String lldpRemPortIdvalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemPortDescvalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemSysDescvalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemSysNamevalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemSysCapSupportedvalue;//DEST MAC ADD OR IP ADDRESSS
+        String lldpRemSysCapEnabledvalue;//DEST MAC ADD OR IP ADDRESSS
+        lldpRemTable lldpRemTableEntry = new lldpRemTable();
 
-       while (itr.hasNext()) {
+        while (itr.hasNext()) {
             String OidKey;
             synchronized (itr) {
                 OidKey = itr.next().toString();
@@ -142,7 +132,6 @@ public class OperationSwitchService {
                 //  System.out.println("value" + value);
                 int portNo = 0;
 //.1.0.8802.1.1.2.1.4.2
-
 
 
                 if (OidKey.contains(".1.0.8802.1.1.2.1.4.1.1.4")) {
@@ -189,7 +178,7 @@ public class OperationSwitchService {
                     lldpRemTableEntry.lldpRemTimeMark = Integer.parseInt(keyArr[1]);
                     lldpRemTableEntry.lldpRemLocalPortNum = Integer.parseInt(keyArr[2]);
                     lldpRemTableEntry.lldpRemIndex = Integer.parseInt(keyArr[3]);
-                                       //
+                    //
                     lldpRemChassisIdSubtype = oidhp.get(OidKey);
                     lldpRemChassisId = new StringBuilder(Global.lldpRemChassisId).append(key).toString();
                     lldpRemPortIdSubtype = new StringBuilder(Global.lldpRemPortIdSubtype).append(key).toString();
@@ -199,7 +188,6 @@ public class OperationSwitchService {
                     lldpRemSysDesc = new StringBuilder(Global.lldpRemSysDesc).append(key).toString();
                     lldpRemSysCapSupported = new StringBuilder(Global.lldpRemSysCapSupported).append(key).toString();
                     lldpRemSysCapEnabled = new StringBuilder(Global.lldpRemSysCapEnabled).append(key).toString();
-
 
 
                     //.1.0.8802.1.1.2.1.4.1.1.5.0.40.12 => 01 AC E5 3A 60
@@ -215,22 +203,22 @@ public class OperationSwitchService {
 //                    System.out.println(lldpRemPortIdSubtypevalue);
                     Short hardWareType = 0;
 
-                    if (lldpRemSysCapSupportedvalue.contains("24 00")){
-                        hardWareType=Constants.IP_PHONE;
+                    if (lldpRemSysCapSupportedvalue.contains("24 00")) {
+                        hardWareType = Constants.IP_PHONE;
                     }
-                    if(lldpRemSysCapSupportedvalue.contains("20 00")){
-                        hardWareType=Constants.SWITCH;
-                    }
-
-                    if(lldpRemSysCapSupportedvalue.contains("28 00")){
-                        hardWareType=Constants.SWITCH;
+                    if (lldpRemSysCapSupportedvalue.contains("20 00")) {
+                        hardWareType = Constants.SWITCH;
                     }
 
-                    if(lldpRemSysCapSupportedvalue.contains("39 00")){
-                        hardWareType=Constants.SWITCH;
+                    if (lldpRemSysCapSupportedvalue.contains("28 00")) {
+                        hardWareType = Constants.SWITCH;
+                    }
+
+                    if (lldpRemSysCapSupportedvalue.contains("39 00")) {
+                        hardWareType = Constants.SWITCH;
                     }
                     String hostname = "";
-                    if (lldpRemSysNamevalue != null){
+                    if (lldpRemSysNamevalue != null) {
                         if (lldpRemSysNamevalue.startsWith("\"") && lldpRemSysNamevalue.endsWith("\"")) {
                             // Remove the leading and trailing double quotes and unescape the internal quotes
                             hostname = lldpRemSysNamevalue.substring(2, lldpRemSysNamevalue.length() - 2).replace("\\\"", "\"");
@@ -240,7 +228,7 @@ public class OperationSwitchService {
                             // If quotes are not present at the beginning and end, print the original string
                             System.out.println(hostname);
                         }
-                }
+                    }
                     if (localmacaddress.length() > 1) {
                         //main.java.com.crl.nms.HibernateDbConn.Global.ne_mac_Hostname_HashMap.put(localmacaddress, hostname);
                     }
@@ -262,7 +250,7 @@ public class OperationSwitchService {
                         case Global.portComponent://portComponent(3)
                             break;
                         case Global.macAddress://macAddress(4)
-                            if (!lldpRemChassisIdvalue.equals(lldpRemPortIdvalue)){
+                            if (!lldpRemChassisIdvalue.equals(lldpRemPortIdvalue)) {
                                 // String destmacAddress = lldpRemChassisIdvalue.replaceAll("\\ ", "\\-");
                                 String destmacAddress = lldpRemChassisIdvalue;
                                 int localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
@@ -297,29 +285,29 @@ public class OperationSwitchService {
                                     synchronized (itr1) {
                                         OidKey1 = itr1.next().toString();
 
-                                        String ipKey1=".1.0.8802.1.1.2.1.4.2.1.3.0."+ lldpRemTableEntry.lldpRemLocalPortNum+"."+lldpRemTableEntry.lldpRemIndex+".1.4.";
-                                        String ipKey2=".1.0.8802.1.1.2.1.4.2.1.3.0."+ lldpRemTableEntry.lldpRemLocalPortNum+"."+lldpRemTableEntry.lldpRemIndex+".6.6.144.235.";
+                                        String ipKey1 = ".1.0.8802.1.1.2.1.4.2.1.3.0." + lldpRemTableEntry.lldpRemLocalPortNum + "." + lldpRemTableEntry.lldpRemIndex + ".1.4.";
+                                        String ipKey2 = ".1.0.8802.1.1.2.1.4.2.1.3.0." + lldpRemTableEntry.lldpRemLocalPortNum + "." + lldpRemTableEntry.lldpRemIndex + ".6.6.144.235.";
 
-                                        System.out.println(OidKey + "==="+ipKey1);
-                                        if (OidKey1.contains(ipKey1)){
+                                        System.out.println(OidKey + "===" + ipKey1);
+                                        if (OidKey1.contains(ipKey1)) {
 
-                                            String ipArr[]= OidKey1.split(ipKey1);
-                                            System.out.println("ip address"+ipArr[1]);
-                                            Global.ne_MAC_IP_HashMap.put(destmacAddress,ipArr[1]);
+                                            String ipArr[] = OidKey1.split(ipKey1);
+                                            System.out.println("ip address" + ipArr[1]);
+                                            Global.ne_MAC_IP_HashMap.put(destmacAddress, ipArr[1]);
 
                                         }
-                                        if (OidKey1.contains(ipKey2) ){
+                                        if (OidKey1.contains(ipKey2)) {
 
-                                            String ipArr[]= OidKey1.split(ipKey2);
-                                            System.out.println("ip address"+ipArr[1]);
-                                            Global.ne_MAC_IP_HashMap.put(destmacAddress,ipArr[1]);
+                                            String ipArr[] = OidKey1.split(ipKey2);
+                                            System.out.println("ip address" + ipArr[1]);
+                                            Global.ne_MAC_IP_HashMap.put(destmacAddress, ipArr[1]);
 
                                         }
                                     }
                                 }
-                                if(hardWareType>0) {
-                                    Short hwSubType=0;
-                                    byte neOpesSys=0;
+                                if (hardWareType > 0) {
+                                    Short hwSubType = 0;
+                                    byte neOpesSys = 0;
                                     dbHandlerService.updateData(Global.ne_MAC_IP_HashMap.get(destmacAddress), destmacAddress, lldpRemSysNamevalue, lldpRemSysNamevalue, hardWareType, hwSubType, neOpesSys);
                                 }
                                 checkforLinkUpdate();
@@ -328,7 +316,7 @@ public class OperationSwitchService {
                             break;
                         case Global.networkAddress: //networkAddress(5)
                             String srcIpAdd = Global.ne_MAC_IP_HashMap.get(localmacaddress);
-                           int localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
+                            int localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
                             //            if (value.length >= 2) {
                             StringBuilder DestIp = new StringBuilder();
                             String[] HexSubValue = lldpRemChassisIdvalue.split(" ");
@@ -351,11 +339,11 @@ public class OperationSwitchService {
                             char divisionChar = ':';
                             String deviceMac = mac.replaceAll("(.{2})", "$1" + divisionChar).substring(0, 17);
                             System.out.println(deviceMac);
-                            Global.ne_MAC_IP_HashMap.put(deviceMac,DestIp.toString());
+                            Global.ne_MAC_IP_HashMap.put(deviceMac, DestIp.toString());
 
-                            if(hardWareType>0) {
-                                Short hwSubType=0;
-                                byte neOpesSys=0;
+                            if (hardWareType > 0) {
+                                Short hwSubType = 0;
+                                byte neOpesSys = 0;
                                 dbHandlerService.updateData(String.valueOf(DestIp), deviceMac, lldpRemSysNamevalue, lldpRemSysNamevalue, hardWareType, hwSubType, neOpesSys);
                             }
 
@@ -363,19 +351,17 @@ public class OperationSwitchService {
                             Global.ne_srcmac_dest_mac_HashMap.put(localmacaddress + "_" + localsrcport, deviceMac + "_" + destPort);
 
 
-
-
                             checkforLinkUpdate();
                             break;
                         case Global.interfaceName: //interfaceName(6)
                             String destmacAddress1 = lldpRemChassisIdvalue;
-                             localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
+                            localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
 
                             break;
 
                         case Global.local: //local(7)
                             String destmacAddress2 = lldpRemChassisIdvalue;
-                             localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
+                            localsrcport = lldpRemTableEntry.lldpRemLocalPortNum;
 
 
                             break;
@@ -387,60 +373,59 @@ public class OperationSwitchService {
             }
 
 
-           //.1.0.8802.1.1.2.1.4.2.1
+            //.1.0.8802.1.1.2.1.4.2.1
 
         }
 
 
+    }
 
-           }
-       public void checkforLinkUpdate () {
+    public void checkforLinkUpdate() {
 
 
+        for (Map.Entry<String, String> entry : Global.ne_srcmac_dest_mac_HashMap.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
 
-            for (Map.Entry<String, String> entry :Global.ne_srcmac_dest_mac_HashMap.entrySet()) {
-                String key = entry.getKey();
-                String value = entry.getValue();
+            System.out.println("Key: " + key + ", Value: " + value);
+            //split source mac_port
+            String srcMacData[] = key.split("_");
+            String srcMacAdd = srcMacData[0];
+            String srcport = srcMacData[1];
+            //split dest mac_port
+            String destMacData[] = value.split("_");
 
-                System.out.println("Key: " + key + ", Value: " + value);
-                //split source mac_port
-                String srcMacData[] = key.split("_");
-                String srcMacAdd = srcMacData[0];
-                String srcport = srcMacData[1];
-                //split dest mac_port
-                String destMacData[] = value.split("_");
+            String destMacAdd = destMacData[0];
+            String destport = destMacData[1];
 
-                String destMacAdd = destMacData[0];
-                String destport = destMacData[1];
+            //check for ip address
+            String srcIpAdd = Global.ne_MAC_IP_HashMap.get(srcMacAdd);
+            String destIpAdd = Global.ne_MAC_IP_HashMap.get(destMacAdd);
+            System.out.println(srcport);
+            System.out.println(destport);
+            System.out.println("srcIpAdd-" + srcIpAdd);
+            System.out.println("destIpAdd-" + destIpAdd);
 
-                //check for ip address
-                String srcIpAdd = Global.ne_MAC_IP_HashMap.get(srcMacAdd);
-                String destIpAdd =Global.ne_MAC_IP_HashMap.get(destMacAdd);
-                System.out.println(srcport);
-                System.out.println(destport);
-                System.out.println("srcIpAdd-" + srcIpAdd);
-                System.out.println("destIpAdd-" + destIpAdd);
+            if (Global.ipKeyHash.get(destIpAdd) == null) {
 
-                if (Global.ipKeyHash.get(destIpAdd)==null){
-
-                    StringBuilder sb = new StringBuilder("fping -a -r 2 ").append(destIpAdd);
-                    System.out.println(sb.toString());
-                    NePingSubPollThreadService worker = new NePingSubPollThreadService(sb,dbHandlerService,ipRange);
-                    Global.ipListscheduledThreadPool.submit(worker);//schedule(w
+                StringBuilder sb = new StringBuilder("fping -a -r 2 ").append(destIpAdd);
+                System.out.println(sb.toString());
+                NePingSubPollThreadService worker = new NePingSubPollThreadService(sb, dbHandlerService, ipRange);
+                Global.ipListscheduledThreadPool.submit(worker);//schedule(w
+            } else {
+                short sPort = Short.parseShort(srcport);
+                short dPort = Short.parseShort(destport);
+                if (srcIpAdd != null && destIpAdd != null && sPort > 0 && dPort > 0) {
+                    // DbHandler db = new DbHandler();
+                    System.out.println("srcIpAdd " + srcIpAdd + " =======> " + " destIpAdd " + destIpAdd + " ===========> " + " sPort" + sPort + " dPort " + dPort);
+                    dbHandlerService.insertConnectivity(srcIpAdd, srcport, destIpAdd, destport);
+                    Global.ne_srcmac_dest_mac_HashMap.remove(key);
                 }
-                else {short sPort = Short.parseShort(srcport);
-                    short dPort = Short.parseShort(destport);
-                    if (srcIpAdd != null && destIpAdd != null && sPort > 0 && dPort > 0) {
-                        // DbHandler db = new DbHandler();
-                        System.out.println("srcIpAdd "+srcIpAdd+" =======> "+" destIpAdd "+destIpAdd+" ===========> "+" sPort"+sPort+" dPort "+dPort);
-                        dbHandlerService.insertConnectivity(srcIpAdd, srcport, destIpAdd, destport);
-                        Global.ne_srcmac_dest_mac_HashMap.remove(key);
-                    }
-                }
-
-
             }
+
+
         }
+    }
 
 /*        public static String returnCurrUtilDate_Sec () {
             try {
@@ -454,7 +439,7 @@ public class OperationSwitchService {
             return null;
         }*/
 
-/*    public void updateDeviceName(String ip, String DeviceName) {
+    /*    public void updateDeviceName(String ip, String DeviceName) {
      *//*   String query = new StringBuilder("update NMS_NE_DETAIL set NE_DESC='")
                 .append(DeviceName).append("' where NE_IP='").append(ip).append("' and NE_DESC='null'").toString();*//*
 

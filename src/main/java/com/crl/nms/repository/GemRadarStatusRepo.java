@@ -10,7 +10,6 @@ import com.crl.nms.databases.GemRadarStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 *//**
- *
  * @author Sneha Prajapati
  *//*
 public interface GemRadarStatusRepo extends JpaRepository<GemRadarStatus, String>{

@@ -12,10 +12,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- *
  * @author Sneha Prajapati
  */
 @Repository
-public interface SensorByteMeasurementRepo extends JpaRepository<SensorByteMeasurement, SensorByteMeasurementPK>{
-    
+public interface SensorByteMeasurementRepo extends JpaRepository<SensorByteMeasurement, SensorByteMeasurementPK> {
+
 }

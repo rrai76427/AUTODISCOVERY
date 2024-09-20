@@ -9,7 +9,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 /**
- *
  * @author root
  */
 public interface Constants {
@@ -44,7 +43,6 @@ public interface Constants {
 
     /**
      * Port NO.
-     *
      */
     short GET_SNMP_PORT = 10161;
     short DEFAULT_GET_PORT = 161;
@@ -66,7 +64,6 @@ public interface Constants {
 
     /**
      * CSCI CONSTANTS.
-     *
      */
     byte NE_HEALTH_POLL_CSCI = 1;
     byte ALARM_CSCI = 2;
@@ -79,25 +76,22 @@ public interface Constants {
 
     /**
      * THRESHOLD CONSTANTS.
-     *
      */
     byte THRESH_HIGH = 1;
     byte THRESH_NORMAL = 2;
 
     /**
      * DEVICES.
-     *
      */
     byte WS = 31;
     byte SERVER = 32;
     byte ROUTERS = 33;
     byte SWITCH = 34;
     byte UPS = 35;
-   byte PRINTER = 36;
-   byte IP_PHONE=37;
+    byte PRINTER = 36;
+    byte IP_PHONE = 37;
     /**
      * Device STATUS.
-     *
      */
     byte UNKNOWN_STATUS = 0;
     byte HEALTHY = 1;//byte ACTIVE = 1;
@@ -108,12 +102,11 @@ public interface Constants {
 
     /**
      * Process STATUS.
-     *
      */
     byte PROCESS_RUNNING = 1;
     byte PROCESS_DOWN = 2;
 
-    int ACTIVE =  1;
+    int ACTIVE = 1;
     byte DOWN = 2;
 
     byte OS_TYPE_WIN = 1;
@@ -128,7 +121,6 @@ public interface Constants {
 
     /**
      * FAULT STATUS.
-     *
      */
     byte FAULT_OPEN = 1;
     byte FAULT_AUTO_ESCLATION = 2;
@@ -137,14 +129,12 @@ public interface Constants {
 
     /**
      * FAULT ACK STATUS.
-     *
      */
     byte FAULT_ACK = 1;
     byte FAULT_NOT_ACK = 2;
 
     /**
      * Alarm SEVERITY.
-     *
      */
     byte CRITICAL = 1;//byte CRITICAL = 1;
     byte NON_CRITICAL = 2;//byte MAJOR = 2;
@@ -174,7 +164,6 @@ public interface Constants {
 //    byte FAULT_MANUAL_CLOSE = 5;
     /**
      * FAULT VISUAL NOTIFY STATUS.
-     *
      */
     byte DISABLE_NOTIFY = 0;
     byte ENABLE_NOTIFY = 1;
@@ -182,7 +171,6 @@ public interface Constants {
 
     /**
      * FAULT ACK STATUS.
-     *
      */
     byte FAULT_SEEN = 1;
     byte FAULT_UNSEEN = 2;
@@ -198,7 +186,6 @@ public interface Constants {
 //    byte INFORMATIVE = 5;
     /**
      * ALARM DB COMMAND.
-     *
      */
     byte INSERT_CMD = 1;
     byte DELETE_CMD = 2;
@@ -207,7 +194,6 @@ public interface Constants {
 
     /**
      * THRESHOLD LIMIT.
-     *
      */
     byte RAM_LIMIT = 1;
     byte CPU_LIMIT = 2;
@@ -215,7 +201,6 @@ public interface Constants {
 
     /**
      * ERROR CODES.
-     *
      */
     byte SUCCESS_CONF = 1;
     byte DUP_PROC_NAME = 2;
@@ -229,13 +214,11 @@ public interface Constants {
 
     /**
      * TREND COUNT.
-     *
      */
     byte MAX_HISTORT_CNT = 10;
 
     /**
      * SNMP CLIENT TYPE.
-     *
      */
     byte NMS_CLIENT_TYPE = 1;
     byte SNMP_AGENT_TYPE = 2;
@@ -243,7 +226,6 @@ public interface Constants {
 
     /**
      * ALARM DATE FORMAT.
-     *
      */
     String NONE_STR = "NONE";
     String LOG_DATE_FORMAT = "dd-MM-yyyy";
@@ -255,7 +237,6 @@ public interface Constants {
 
     /**
      * OTHERS
-     *
      */
     public byte IP_ADDRESS_CHANGE = 1;
     public byte NE_NAME_CHANGE = 2;

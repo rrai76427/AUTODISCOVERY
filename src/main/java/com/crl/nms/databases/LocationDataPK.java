@@ -10,12 +10,12 @@ import java.io.Serializable;
 @Data
 @Getter
 @Setter
-public class LocationDataPK implements Serializable{
-//    @Basic(optional = false)
+public class LocationDataPK implements Serializable {
+    //    @Basic(optional = false)
 //    @NotNull
 //    @Column(name = "locationCode")
     String locationCode;
-//    @Basic(optional = false)
+    //    @Basic(optional = false)
 //    @NotNull
 //    @Column(name = "lineId")
     int lineId;

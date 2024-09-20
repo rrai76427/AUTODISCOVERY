@@ -1,12 +1,15 @@
-package  com.crl.nms.databases;
+package com.crl.nms.databases;
 
-import java.io.Serializable;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -64,5 +67,5 @@ public class NmsInfoEvents implements Serializable {
     public String toString() {
         return "shm_bo.NmsInfoEvents[ nmsInfoEventsPK=" + nmsInfoEventsPK + " ]";
     }
-    
+
 }

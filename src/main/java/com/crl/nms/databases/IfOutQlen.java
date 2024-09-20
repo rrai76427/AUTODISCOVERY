@@ -23,8 +23,6 @@ public class IfOutQlen {
     private String paramValue;
 
 
-
-
     public IfOutQlen() {
     }
 }

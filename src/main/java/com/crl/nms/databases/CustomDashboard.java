@@ -1,15 +1,17 @@
 package com.crl.nms.databases;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.transaction.Transactional;
-import org.hibernate.annotations.JdbcTypeCode;
-import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 
 /**
- *
  * @author Sneha Prajapati
  */
 

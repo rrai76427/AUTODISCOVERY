@@ -1,13 +1,13 @@
-package  com.crl.nms.databases;
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
+package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
- *
  * @author ashwinimehta
  */
 @Entity
@@ -169,5 +169,5 @@ public class RdtJobDetail implements Serializable {
     public String toString() {
         return "com.crl.nms.bo.RdtJobDetail[ alarmTagno=" + alarmTagno + " ]";
     }
-    
+
 }
