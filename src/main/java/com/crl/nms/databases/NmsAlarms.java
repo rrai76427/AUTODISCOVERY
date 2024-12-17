@@ -1,18 +1,15 @@
-package com.crl.nms.databases;
-
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+package  com.crl.nms.databases;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.*;
 
 /**
+ *
  * @author meenuchhindra
  */
 @Entity
@@ -22,13 +19,11 @@ import java.util.Date;
 @Setter
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class NmsAlarms implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    //    @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
-//    @ManyToOne(optional = false)
-//    private NmsNeDetail nekey;
     @Column(name = "NEKEY")
     private String nekey;
 
@@ -56,7 +51,6 @@ public class NmsAlarms implements Serializable {
 
     @Column(name = "FAULT_STATUS")
     private Short faultStatus;
-    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -96,14 +90,9 @@ public class NmsAlarms implements Serializable {
     @Column(name = "RDT_FLAG")
     private Short rdtFlag;
 
-    @JoinColumn(name = "ALARM_ID", referencedColumnName = "ALARM_ID")
-    @ManyToOne
-    private NmsAlarmClassification alarmId;
+    @Column(name = "ALARM_ID")
+    private String alarmId;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "nmsAlarms")
-    private RdtJobDetail rdtJobDetail;
-
-    // Add foreign key columns for LocationData
     @JoinColumns({
             @JoinColumn(name = "LOCATION_CODE", referencedColumnName = "locationCode"),
             @JoinColumn(name = "LINE_ID", referencedColumnName = "lineId")
@@ -115,33 +104,4 @@ public class NmsAlarms implements Serializable {
     @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private NmsNeDetail nmsNeDetail;
-
-    public NmsAlarms() {
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (tagno != null ? tagno.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof NmsAlarms)) {
-            return false;
-        }
-        NmsAlarms other = (NmsAlarms) object;
-        if ((this.tagno == null && other.tagno != null) || (this.tagno != null && !this.tagno.equals(other.tagno))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "com.nms.crl.bo.NmsAlarms[ tagno=" + tagno + " ]";
-    }
-
 }

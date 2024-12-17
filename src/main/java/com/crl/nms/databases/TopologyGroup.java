@@ -4,12 +4,12 @@ import jakarta.persistence.*;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
 @Entity
 @Table(name = "TOPOLOGY_GROUP")
-
 @Data
 @Getter
 @Setter

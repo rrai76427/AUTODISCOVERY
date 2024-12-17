@@ -3,9 +3,7 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
 import lombok.*;
-
 import java.util.Date;
-
 
 @Data
 @NoArgsConstructor
@@ -28,7 +26,6 @@ public class SysLogMessages {
     private String severity;
 
     @Column(name = "timestamp")
-    // @Convert(converter = UnixTimestampConverter.class)
     private Date timestamp;
 
 
@@ -40,6 +37,4 @@ public class SysLogMessages {
 
     @Column(name = "message_type")
     private String messageType;
-
-
 }

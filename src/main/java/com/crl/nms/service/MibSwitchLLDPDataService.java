@@ -79,11 +79,11 @@ public class MibSwitchLLDPDataService {
                 .append(" -X ").append(privAlgoUser).append(" -l AuthPriv ").
                 append(ne_ip).append(":").append(port).append(" .1.0.8802.1.1.2.1").toString();
         System.out.println(cmd);*/
-
+           // append(privacyProtocolEnumPojo.getProtocol())
             cmd = new StringBuilder("snmpwalk -v").append(ipRange.getSnmpVersion()).append(" -On -u ").append(ipRange.getUsernameSNMP()).append(" -a ").
-                    append(authenticationProtocolEnumPojo.getProtocol()).append(" -A ").append(ipRange.getUsernameSNMP()).append(" -x ").append(privacyProtocolEnumPojo.getProtocol())
-                    .append(" -X ").append(ipRange.getUsernameSNMP()).append(" -l AuthPriv ").
-                    append(ne_ip).append(":").append(ipRange.getPort()).append(" .1.3.6.1.2.1.4.22.1").toString();
+                    append(authenticationProtocolEnumPojo.getProtocol()).append(" -A ").append(ipRange.getAuthPassphrase()).append(" -x ").append("DES")
+                    .append(" -X ").append(ipRange.getAuthPassphrase()).append(" -l AuthPriv ").
+                    append(ne_ip).append(":").append(ipRange.getPort()).append(" .1.0.8802.1.1.2.1").toString();
             System.out.println(cmd);
         }
 

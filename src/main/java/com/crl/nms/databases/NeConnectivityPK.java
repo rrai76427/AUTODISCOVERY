@@ -1,12 +1,10 @@
-package com.crl.nms.databases;
-
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+package  com.crl.nms.databases;
 
 import java.io.Serializable;
+import jakarta.persistence.*;
 
 /**
+ *
  * @author meenuchhindra
  */
 @Embeddable
@@ -15,12 +13,15 @@ public class NeConnectivityPK implements Serializable {
     @Basic(optional = false)
     @Column(name = "SRC_NEKEY")
     private String srcNekey;
+
     @Basic(optional = false)
     @Column(name = "SRC_PORT")
     private long srcPort;
+
     @Basic(optional = false)
     @Column(name = "DEST_NEKEY")
     private String destNekey;
+
     @Basic(optional = false)
     @Column(name = "DEST_PORT")
     private long destPort;

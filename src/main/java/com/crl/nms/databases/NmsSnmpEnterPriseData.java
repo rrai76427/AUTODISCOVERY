@@ -5,13 +5,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
-
 import java.util.Date;
 
 @Entity
 @Table(name = "nms_snmp_enterprise_data")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Setter
 @Getter
@@ -28,7 +28,4 @@ public class NmsSnmpEnterPriseData {
 
     @Column(name = "updated_on")
     private Date updatedOn;
-
-    public NmsSnmpEnterPriseData() {
-    }
 }

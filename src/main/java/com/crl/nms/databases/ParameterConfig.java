@@ -1,12 +1,10 @@
 package com.crl.nms.databases;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -24,6 +22,4 @@ public class ParameterConfig {
 
     @Column(name = "PARAMETER")
     private String parameter;
-
-
 }

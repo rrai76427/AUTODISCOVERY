@@ -3,10 +3,10 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
 import lombok.*;
-
 import java.util.Date;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 

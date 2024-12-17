@@ -7,6 +7,7 @@ import lombok.*;
 @Table(name = "nms_snmp_ifadminstatus")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Setter
 @Getter
@@ -21,8 +22,4 @@ public class IfAdminStatus {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfAdminStatus() {
-    }
 }

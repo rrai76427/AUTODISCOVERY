@@ -7,6 +7,7 @@ import lombok.*;
 import java.util.Date;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -23,5 +24,4 @@ public class DeviceResponseTimePK {
 
     @Column(name = "UPDATED_ON")
     private Date updatedOn;
-
 }

@@ -1,27 +1,22 @@
-package com.crl.nms.databases;
-
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-import jakarta.xml.bind.annotation.XmlTransient;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+package  com.crl.nms.databases;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.*;
 
 /**
+ *
  * @author ashwinimehta
  */
 @Entity
 @Table(name = "NMS_NE_DETAIL")
 @XmlRootElement
-@Data
-@AllArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
 public class NmsNeDetail implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -112,15 +107,12 @@ public class NmsNeDetail implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nekey")
     private List<NmsNeHdd> nmsNeHddList;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "nmsNeDetail")
-    private NmsDeviceLink nmsDeviceLink;
-
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nekey")
     private List<NmsNeCpu> nmsNeCpuList;
-
+    
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nmsNeDetail")
     private List<NmsNeRam> nmsNeRam;
-
+    
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "nmsNeDetail")
     private List<NmsNeProcesses> nmsNeProcessesList;
 
@@ -148,7 +140,8 @@ public class NmsNeDetail implements Serializable {
         this.nekey = nekey;
     }
 
-    public NmsNeDetail(String nekey, int nodeId, short neId, long hardwareId, short isCriticalServer) {
+    public NmsNeDetail(String nekey, int nodeId, short neId, long hardwareId,short isCriticalServer) {
+
         this.nekey = nekey;
         this.nodeId = nodeId;
         this.neId = neId;
@@ -157,9 +150,7 @@ public class NmsNeDetail implements Serializable {
     }
 
     public NmsNeDetail() {
-
     }
-
 
     public String getNekey() {
         return nekey;
@@ -167,6 +158,14 @@ public class NmsNeDetail implements Serializable {
 
     public void setNekey(String nekey) {
         this.nekey = nekey;
+    }
+
+    public List<NmsTrapConfiguration> getNmsTrapConfigurationList() {
+        return nmsTrapConfigurationList;
+    }
+
+    public void setNmsTrapConfigurationList(List<NmsTrapConfiguration> nmsTrapConfigurationList) {
+        this.nmsTrapConfigurationList = nmsTrapConfigurationList;
     }
 
     public int getNodeId() {
@@ -191,6 +190,14 @@ public class NmsNeDetail implements Serializable {
 
     public void setNeIp(String neIp) {
         this.neIp = neIp;
+    }
+
+    public String getNeGroup() {
+        return neGroup;
+    }
+
+    public void setNeGroup(String neGroup) {
+        this.neGroup = neGroup;
     }
 
     public String getNeDesc() {
@@ -289,116 +296,6 @@ public class NmsNeDetail implements Serializable {
         this.csciId = csciId;
     }
 
-    public String getXPos() {
-        return xPos;
-    }
-
-    public void setXPos(String xPos) {
-        this.xPos = xPos;
-    }
-
-    public String getYPos() {
-        return yPos;
-    }
-
-    public void setYPos(String yPos) {
-        this.yPos = yPos;
-    }
-
-    public short getIsCriticalServer() {
-        return isCriticalServer;
-    }
-
-    public void setIsCriticalServer(short isCriticalServer) {
-        this.isCriticalServer = isCriticalServer;
-    }
-
-    public String getNeGroup() {
-        return neGroup;
-    }
-
-    public void setNeGroup(String neGroup) {
-        this.neGroup = neGroup;
-    }
-
-    @XmlTransient
-    public List<NmsPerfIftable> getNmsPerfIftableList() {
-        return nmsPerfIftableList;
-    }
-
-    public void setNmsPerfIftableList(List<NmsPerfIftable> nmsPerfIftableList) {
-        this.nmsPerfIftableList = nmsPerfIftableList;
-    }
-
-    @XmlTransient
-    public List<NmsNeHdd> getNmsNeHddList() {
-        return nmsNeHddList;
-    }
-
-    public void setNmsNeHddList(List<NmsNeHdd> nmsNeHddList) {
-        this.nmsNeHddList = nmsNeHddList;
-    }
-
-    public NmsDeviceLink getNmsDeviceLink() {
-        return nmsDeviceLink;
-    }
-
-    public void setNmsDeviceLink(NmsDeviceLink nmsDeviceLink) {
-        this.nmsDeviceLink = nmsDeviceLink;
-    }
-
-    @XmlTransient
-    public List<NmsNeCpu> getNmsNeCpuList() {
-        return nmsNeCpuList;
-    }
-
-    public void setNmsNeCpuList(List<NmsNeCpu> nmsNeCpuList) {
-        this.nmsNeCpuList = nmsNeCpuList;
-    }
-
-    public List<NmsNeRam> getNmsNeRam() {
-        return nmsNeRam;
-    }
-
-    public void setNmsNeRam(List<NmsNeRam> nmsNeRam) {
-        this.nmsNeRam = nmsNeRam;
-    }
-
-    @XmlTransient
-    public List<NmsNeProcesses> getNmsNeProcessesList() {
-        return nmsNeProcessesList;
-    }
-
-    public void setNmsNeProcessesList(List<NmsNeProcesses> nmsNeProcessesList) {
-        this.nmsNeProcessesList = nmsNeProcessesList;
-    }
-
-    public NmsNeTypes getNeType() {
-        return neType;
-    }
-
-    public void setNeType(NmsNeTypes neType) {
-        this.neType = neType;
-    }
-
-    public NodeDefinition getNodeKey() {
-        return nodeKey;
-    }
-
-    public void setNodeKey(NodeDefinition nodeKey) {
-        this.nodeKey = nodeKey;
-    }
-
-    @XmlTransient
-    public List<NmsTrapConfiguration> getNmsTrapConfigurationList() {
-        return nmsTrapConfigurationList;
-    }
-
-
-    public void setNmsTrapConfigurationList(List<NmsTrapConfiguration> nmsTrapConfigurationList) {
-        this.nmsTrapConfigurationList = nmsTrapConfigurationList;
-    }
-
     public String getxPos() {
         return xPos;
     }
@@ -413,6 +310,14 @@ public class NmsNeDetail implements Serializable {
 
     public void setyPos(String yPos) {
         this.yPos = yPos;
+    }
+
+    public short getIsCriticalServer() {
+        return isCriticalServer;
+    }
+
+    public void setIsCriticalServer(short isCriticalServer) {
+        this.isCriticalServer = isCriticalServer;
     }
 
     public String getURL() {
@@ -439,6 +344,46 @@ public class NmsNeDetail implements Serializable {
         this.locationData = locationData;
     }
 
+    public List<NmsPerfIftable> getNmsPerfIftableList() {
+        return nmsPerfIftableList;
+    }
+
+    public void setNmsPerfIftableList(List<NmsPerfIftable> nmsPerfIftableList) {
+        this.nmsPerfIftableList = nmsPerfIftableList;
+    }
+
+    public List<NmsNeHdd> getNmsNeHddList() {
+        return nmsNeHddList;
+    }
+
+    public void setNmsNeHddList(List<NmsNeHdd> nmsNeHddList) {
+        this.nmsNeHddList = nmsNeHddList;
+    }
+
+    public List<NmsNeCpu> getNmsNeCpuList() {
+        return nmsNeCpuList;
+    }
+
+    public void setNmsNeCpuList(List<NmsNeCpu> nmsNeCpuList) {
+        this.nmsNeCpuList = nmsNeCpuList;
+    }
+
+    public List<NmsNeRam> getNmsNeRam() {
+        return nmsNeRam;
+    }
+
+    public void setNmsNeRam(List<NmsNeRam> nmsNeRam) {
+        this.nmsNeRam = nmsNeRam;
+    }
+
+    public List<NmsNeProcesses> getNmsNeProcessesList() {
+        return nmsNeProcessesList;
+    }
+
+    public void setNmsNeProcessesList(List<NmsNeProcesses> nmsNeProcessesList) {
+        this.nmsNeProcessesList = nmsNeProcessesList;
+    }
+
     public List<NmsNeDeviceStats> getNmsNeDeviceStats() {
         return nmsNeDeviceStats;
     }
@@ -463,29 +408,19 @@ public class NmsNeDetail implements Serializable {
         this.nmsAlarms = nmsAlarms;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (nekey != null ? nekey.hashCode() : 0);
-        return hash;
+    public NmsNeTypes getNeType() {
+        return neType;
     }
 
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof NmsNeDetail)) {
-            return false;
-        }
-        NmsNeDetail other = (NmsNeDetail) object;
-        if ((this.nekey == null && other.nekey != null) || (this.nekey != null && !this.nekey.equals(other.nekey))) {
-            return false;
-        }
-        return true;
+    public void setNeType(NmsNeTypes neType) {
+        this.neType = neType;
     }
 
-    @Override
-    public String toString() {
-        return "shm_bo.NmsNeDetail[ nekey=" + nekey + " ]";
+    public NodeDefinition getNodeKey() {
+        return nodeKey;
     }
 
+    public void setNodeKey(NodeDefinition nodeKey) {
+        this.nodeKey = nodeKey;
+    }
 }

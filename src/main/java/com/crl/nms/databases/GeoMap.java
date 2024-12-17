@@ -10,6 +10,7 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -25,12 +26,16 @@ public class GeoMap {
     @Id
     @Column(name = "GEOMAP_ID")
     protected Integer geoMapId;
-    @Column(name = "DEFAULT_FLAG")
-    protected Integer defaultFlag;
+
     @Column(name = "GEOMAP_NAME")
     private String geoMapName;
+
     @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "DEFAULT_FLAG")
+    protected Integer defaultFlag;
+
     @Column(name = "DESCRIPTION")
     private String description;
 

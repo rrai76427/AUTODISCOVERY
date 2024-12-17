@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -36,5 +37,4 @@ public class DeviceStatusEnum {
 
     @Column(name = "BACKGROUND_COLOR_DARK")
     private String background_color_dark;
-
 }

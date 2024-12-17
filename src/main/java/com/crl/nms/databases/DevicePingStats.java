@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -34,5 +35,4 @@ public class DevicePingStats {
 
     @Column(name = "UPDATED_ON")
     private Date updatedOn;
-
 }

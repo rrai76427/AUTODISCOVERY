@@ -102,6 +102,7 @@ public class Main {
             //infoObj.getDatabaseProperties();
             //setDatabasePropertyAndSelfIp();
             DbHandlerService dbObj = new DbHandlerService();
+            dbObj.initialize(nmsNeDetailRepository);
 
             //  TestIp testIp=new TestIp();
             // sendMsgToNeAlarm(testIp);

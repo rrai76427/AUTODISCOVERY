@@ -1,18 +1,14 @@
 package com.crl.nms.databases;
 
-//import com.crl.nms.user.UserPermission;
-
 import com.fasterxml.jackson.databind.JsonNode;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
 import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 /**
+ *
  * @author Satwik Anmol
  */
 
@@ -56,15 +52,6 @@ public class SysRoleMenuConfig {
     @JdbcTypeCode(SqlTypes.JSON)
     private JsonNode userManagement;
 
-//    @ManyToMany(fetch = FetchType.EAGER)
-////    @JoinTable(
-////            name = "role_permission",
-////            joinColumns = @JoinColumn(name = "role_id"),
-////            inverseJoinColumns = @JoinColumn(name = "permission_id")
-////    )
-//    private Set<UserPermission> permissions = new HashSet<>();
-
-    // Constructor with all fields except roleId
     public SysRoleMenuConfig(String role, JsonNode configuration, JsonNode help, String landingPage, JsonNode main, JsonNode report, JsonNode userManagement) {
         this.role = role;
         this.configuration = configuration;
@@ -73,6 +60,5 @@ public class SysRoleMenuConfig {
         this.main = main;
         this.report = report;
         this.userManagement = userManagement;
-        //this.permissions = permissions;
     }
 }

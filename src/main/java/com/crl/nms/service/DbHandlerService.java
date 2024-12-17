@@ -683,10 +683,16 @@ public class DbHandlerService {
     private KafkaTemplate<String, String> kafkaJSONStringMsgSender;
 
     private ConcurrentHashMap<NmsNeTypes, Integer> neKeyHashMapCount = new ConcurrentHashMap<>(16, 0.9f, 1);
-    private Map<NmsNeTypes, Short> result = new HashMap<>();
+  //  private Map<NmsNeTypes, Short> result = new HashMap<>();
+
+   /*public void  DbHandlerService(NmsNeDetailRepository nmsNeDetailRepo){
+        this.nmsNeDetailRepo=nmsNeDetailRepo;
+    }*/
+
 
     @Transactional
-    public void initialize() {
+    public void initialize(NmsNeDetailRepository nmsNeDetailRepository) {
+        this.nmsNeDetailRepo=nmsNeDetailRepository;
         Map<NmsNeTypes, NmsNeDetail> latestNeidByNetype = new HashMap<>();
         List<NmsNeDetail> neDetailsList = nmsNeDetailRepo.findAll();
         for (NmsNeDetail neDetail : neDetailsList) {
@@ -698,12 +704,13 @@ public class DbHandlerService {
         }
 
         for (Map.Entry<NmsNeTypes, NmsNeDetail> entry : latestNeidByNetype.entrySet()) {
-            result.put(entry.getKey(), entry.getValue().getNeId());
+            Global.result.put(entry.getKey().getNeType(), entry.getValue().getNeId());
         }
+        System.out.println("RAVI");
     }
 
     @Transactional
-    public void updateData(String neipStr, String neMacStr, String nedescStr, String neHostNameStr, short hwType, short hwSubType, byte neOperSys) {
+    public void updateData(String neipStr, String neMacStr, String nedescStr, String neHostNameStr, Short hwType, short hwSubType, byte neOperSys) {
         String neKey1 = "";
         int neId = 0;
         ConcurrentHashMap<Integer, Integer> neKeyHashMap = new ConcurrentHashMap<>(16, 0.9f, 1);
@@ -726,12 +733,13 @@ public class DbHandlerService {
 
             NmsNeTypes nmsNeType = new NmsNeTypes();
             nmsNeType.setNeType(key);
-            short neCount = 0;
+            Short neCount = 0;
 
-            if ((result == null || result.isEmpty()) || nmsNeTypeList.isEmpty()) {
-                result.put(nmsNeType, neCount);
-            } else {
-                neCount = result.getOrDefault(nmsNeType, (short) 0);
+            if ((Global.result == null || Global.result.isEmpty()) || nmsNeTypeList.isEmpty()) {
+                Global.result.put(key, neCount);
+            }
+            else{
+                neCount=Global.result.get(key);
             }
 
             neCount++;
@@ -740,7 +748,7 @@ public class DbHandlerService {
 
             logger.info("neKey1: {}", neKey1);
 
-            result.put(nmsNeType, neCount);
+            Global.result.put(key, neCount);
 
             entity.setNekey(neKey1);
             addDeviceModel.setNeKey(neKey1);
@@ -800,10 +808,10 @@ public class DbHandlerService {
           //  addDeviceModel.setSnmpVersion(String.valueOf(ACTIVE));
 
 
-            entity.setXPos("100");
+            entity.setxPos("100");
 
 
-            entity.setYPos("100");
+            entity.setyPos("100");
 
             NmsNeTypes nmsNeTypes = new NmsNeTypes();
             nmsNeTypes.setNeType(hwType);

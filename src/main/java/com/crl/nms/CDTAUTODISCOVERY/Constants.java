@@ -84,6 +84,7 @@ public interface Constants {
      * DEVICES.
      */
     byte WS = 31;
+    byte UNKNOWN=0;
     byte SERVER = 32;
     byte ROUTERS = 33;
     byte SWITCH = 34;

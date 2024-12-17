@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfSpecific {
 
     @Id
@@ -21,8 +22,4 @@ public class IfSpecific {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfSpecific() {
-    }
 }

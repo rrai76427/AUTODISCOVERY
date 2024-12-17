@@ -1,13 +1,8 @@
 package com.crl.nms.databases;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
-
 import java.util.Date;
-
 
 @Entity
 @Table(name = "HDDCONFIG")
@@ -29,7 +24,6 @@ public class HDDConfig {
 
     public HDDConfig() {
     }
-
 
     public HDDConfigPK getHddConfigPK() {
         return hddConfigPK;

@@ -5,6 +5,7 @@ import jakarta.persistence.Embeddable;
 import lombok.*;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Setter
@@ -14,9 +15,7 @@ public class NmsSnmpEnterPriseDataPK {
 
     @Column(name = "nekey")
     private String neKey;
+
     @Column(name = "trap_oid")
     private String trapOid;
-
-    public NmsSnmpEnterPriseDataPK() {
-    }
 }

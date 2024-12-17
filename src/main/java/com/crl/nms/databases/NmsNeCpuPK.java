@@ -1,14 +1,15 @@
 package com.crl.nms.databases;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-
+import lombok.*;
 import java.util.Date;
-
 
 @Embeddable
 @Builder
+@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @AllArgsConstructor
 public class NmsNeCpuPK {
 
@@ -20,23 +21,4 @@ public class NmsNeCpuPK {
     @Column(name = "UPDATETIME")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatetime;
-
-    public NmsNeCpuPK() {
-    }
-
-    public String getTrendkey() {
-        return trendkey;
-    }
-
-    public void setTrendkey(String trendkey) {
-        this.trendkey = trendkey;
-    }
-
-    public Date getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(Date updatetime) {
-        this.updatetime = updatetime;
-    }
 }

@@ -1,26 +1,24 @@
-package com.crl.nms.databases;
+package  com.crl.nms.databases;
 
+import java.io.Serializable;
+import java.util.List;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
-import java.io.Serializable;
-import java.util.List;
-
 /**
+ *
  * @author ashwinimehta
  */
 @Entity
 @Table(name = "NMS_NE_TYPES")
 @XmlRootElement
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class NmsNeTypes implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
     @Id
     @Basic(optional = false)
     @Column(name = "NE_TYPE")
@@ -68,8 +66,35 @@ public class NmsNeTypes implements Serializable {
     @Column(name = "IS_PORT_APPLICABLE")
     private Short isPortApplicable;
 
+    @Column(name = "IS_CONNECTIVITY_APPLICABLE")
+    private Short isConnectivityApplicable;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "neType")
     private List<NmsNeDetail> nmsNeDetailList;
+
+
+    public NmsNeTypes() {
+    }
+
+
+    public NmsNeTypes(Short neType, String neDesc, String neIcon, Short specificHw, Short pollType, Short ipFlg, Short pollingInterval, Short groupNo, int snmpPort, Short isSnmpDevice, Short isRamApplicable, Short isCpuApplicable, Short isHddApplicable, Short isPortApplicable, Short isConnectivityApplicable, List<NmsNeDetail> nmsNeDetailList) {
+        this.neType = neType;
+        this.neDesc = neDesc;
+        this.neIcon = neIcon;
+        this.specificHw = specificHw;
+        this.pollType = pollType;
+        this.ipFlg = ipFlg;
+        this.pollingInterval = pollingInterval;
+        this.groupNo = groupNo;
+        this.snmpPort = snmpPort;
+        this.isSnmpDevice = isSnmpDevice;
+        this.isRamApplicable = isRamApplicable;
+        this.isCpuApplicable = isCpuApplicable;
+        this.isHddApplicable = isHddApplicable;
+        this.isPortApplicable = isPortApplicable;
+        this.isConnectivityApplicable = isConnectivityApplicable;
+        this.nmsNeDetailList = nmsNeDetailList;
+    }
 
     public Short getNeType() {
         return neType;
@@ -181,6 +206,14 @@ public class NmsNeTypes implements Serializable {
 
     public void setIsPortApplicable(Short isPortApplicable) {
         this.isPortApplicable = isPortApplicable;
+    }
+
+    public Short getIsConnectivityApplicable() {
+        return isConnectivityApplicable;
+    }
+
+    public void setIsConnectivityApplicable(Short isConnectivityApplicable) {
+        this.isConnectivityApplicable = isConnectivityApplicable;
     }
 
     public List<NmsNeDetail> getNmsNeDetailList() {

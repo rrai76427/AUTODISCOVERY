@@ -1,11 +1,10 @@
 package com.crl.nms.databases;
 
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.*;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 @Data
@@ -16,11 +15,6 @@ import lombok.*;
 @Embeddable
 @Builder
 public class NmsNeDeviceInterfaceDetailPK {
-
-//    @Basic(optional = false)
-//    @JoinColumn(name = "NEKEY", referencedColumnName = "NEKEY")
-//    @ManyToOne(optional = false)
-//    private NmsNeDetail nekey;
 
     @Basic(optional = false)
     @Column(name = "NEKEY")

@@ -1,13 +1,14 @@
-package com.crl.nms.databases;
+package  com.crl.nms.databases;
+
+import java.io.Serializable;
+import java.util.Date;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
-import java.io.Serializable;
-import java.util.Date;
-
 /**
+ *
  * @author ashwinimehta
  */
 @Entity
@@ -21,11 +22,14 @@ import java.util.Date;
 public class EnterpriseParamTemplate implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
     @EmbeddedId
     protected EnterpriseParamTemplatePK enterpriseParamTemplatePK;
+
+    @Column(name = "NE_TYPE")
+    private Short neType;
 
     @Column(name = "UPDATED_ON")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedOn;
-
 }

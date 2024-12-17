@@ -10,11 +10,14 @@ package com.crl.nms.CDTAUTODISCOVERY;
 import com.crl.nms.NeInfo.NeObject;
 import com.crl.nms.NeInfo.NeTypeClass;*/
 
+import com.crl.nms.databases.NmsNeTypes;
 import com.crl.nms.pojo.CurrInfoPojo;
 import com.crl.nms.pojo.NeObjectPojo;
 import com.crl.nms.pojo.NeTypeClassPojo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -32,6 +35,8 @@ public class Global {
     public final static ArrayList<NeObjectPojo> editElementList = new ArrayList();
     public final static ArrayList<String> delElementList = new ArrayList();
     public final static ConcurrentHashMap<String, NeObjectPojo> neHashMap = new ConcurrentHashMap();
+
+    public final static Map<Short, Short> result = new HashMap<>();
     public final static ArrayList<byte[]> udpBufferList = new ArrayList();
     //lldpRemChassisIdSubtype-
     //lldpRemPortIdSubtype-

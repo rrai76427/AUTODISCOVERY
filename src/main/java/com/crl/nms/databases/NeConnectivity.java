@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,7 +15,6 @@ import java.util.Date;
 @Data
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 public class NeConnectivity implements Serializable {
 
@@ -64,6 +62,9 @@ public class NeConnectivity implements Serializable {
 
     @Column(name = "UPDATED_BY")
     private String updatedBy;
+
+    public NeConnectivity() {
+    }
 
     public NeConnectivityPK getNeConnectivityPK() {
         return neConnectivityPK;

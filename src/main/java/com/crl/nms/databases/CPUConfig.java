@@ -2,18 +2,16 @@ package com.crl.nms.databases;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
-
 import java.util.Date;
 
-
 /**
+ *
  * @author Sneha Prajapati
  */
 @Entity
 @Table(name = "CPUCONFIG")
 @XmlRootElement
 public class CPUConfig {
-
 
     @Id
     @Basic(optional = false)
@@ -31,7 +29,6 @@ public class CPUConfig {
 
     public CPUConfig() {
     }
-
 
     public String getNekey() {
         return nekey;

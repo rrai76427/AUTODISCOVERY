@@ -1,15 +1,13 @@
-package com.crl.nms.databases;
-
-import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+package  com.crl.nms.databases;
 
 import java.io.Serializable;
 import java.util.Date;
+import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.*;
 
 /**
+ *
  * @author Administrator
  */
 @Entity
@@ -17,43 +15,49 @@ import java.util.Date;
 @XmlRootElement
 @Data
 @Builder
-
+@Getter
+@Setter
 @AllArgsConstructor
-
 public class NodeDefinition implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
     @Basic(optional = false)
     @Column(name = "DESCRIPTION")
     private String description;
+
     @Basic(optional = false)
     @Column(name = "LEVEL_ID")
     private short levelId;
+
     @Column(name = "TYPE")
     private String type;
+
     @Basic(optional = false)
     @Column(name = "UPDATED_ON")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedOn;
+
     @Basic(optional = false)
     @Column(name = "UPDATED_BY")
     private String updatedBy;
+
     @Id
     @Basic(optional = false)
     @Column(name = "NODE_KEY")
     private Integer nodeKey;
+
     @Basic(optional = false)
     @Column(name = "NMS_FLAG")
     private short nmsFlag;
 
     public NodeDefinition() {
+
+
     }
 
-    public NodeDefinition(Integer nodeKey) {
-        this.nodeKey = nodeKey;
-    }
+    public NodeDefinition(Integer nodeKey, String description, Short levelId, Date updatedOn, String updatedBy, short nmsFlag) {
 
-    public NodeDefinition(Integer nodeKey, String description, short levelId, Date updatedOn, String updatedBy, short nmsFlag) {
         this.nodeKey = nodeKey;
         this.description = description;
         this.levelId = levelId;
@@ -117,30 +121,4 @@ public class NodeDefinition implements Serializable {
     public void setNmsFlag(short nmsFlag) {
         this.nmsFlag = nmsFlag;
     }
-
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (nodeKey != null ? nodeKey.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof NodeDefinition)) {
-            return false;
-        }
-        NodeDefinition other = (NodeDefinition) object;
-        if ((this.nodeKey == null && other.nodeKey != null) || (this.nodeKey != null && !this.nodeKey.equals(other.nodeKey))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "javaapplication1.NodeDefinition[ nodeKey=" + nodeKey + " ]";
-    }
-
 }

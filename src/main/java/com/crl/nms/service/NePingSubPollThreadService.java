@@ -55,7 +55,8 @@ public class NePingSubPollThreadService extends Thread implements Constants {
                 process.getInputStream().close();
                 process.getOutputStream().close();
             } catch (IOException | NullPointerException | ArrayIndexOutOfBoundsException e) {
-
+                process.getInputStream().close();
+                process.getOutputStream().close();
             }
 
             for (int i = linelist.size() - 1; i >= 0; i--) {

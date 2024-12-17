@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Entity
 @Table(name = "nms_snmp_iftype")
 @Data
@@ -12,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfType {
 
     @Id
@@ -22,7 +22,4 @@ public class IfType {
 
     @Column(name = "param_value")
     private String paramValue;
-
-    public IfType() {
-    }
 }

@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Entity
 @Table(name = "nms_snmp_ifoutoctets")
 @Data
@@ -12,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfOutOctets {
 
     @Id
@@ -22,8 +22,4 @@ public class IfOutOctets {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfOutOctets() {
-    }
 }

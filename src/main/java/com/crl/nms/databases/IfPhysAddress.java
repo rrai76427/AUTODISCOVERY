@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Entity
 @Table(name = "nms_snmp_ifphysaddress")
 @Data
@@ -12,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfPhysAddress {
 
     @Id
@@ -22,8 +22,4 @@ public class IfPhysAddress {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfPhysAddress() {
-    }
 }

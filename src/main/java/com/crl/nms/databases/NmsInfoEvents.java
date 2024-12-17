@@ -1,15 +1,12 @@
-package com.crl.nms.databases;
+package  com.crl.nms.databases;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import java.io.Serializable;
+import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
-import java.io.Serializable;
-
 /**
+ *
  * @author ashwinimehta
  */
 @Entity
@@ -41,31 +38,4 @@ public class NmsInfoEvents implements Serializable {
 
     @Column(name = "LAST_NAME")
     private String lastname;
-
-    @Override
-    public int hashCode() {
-
-        int hash = 0;
-        hash += (nmsInfoEventsPK != null ? nmsInfoEventsPK.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-
-        if (!(object instanceof NmsInfoEvents)) {
-            return false;
-        }
-        NmsInfoEvents other = (NmsInfoEvents) object;
-        if ((this.nmsInfoEventsPK == null && other.nmsInfoEventsPK != null) || (this.nmsInfoEventsPK != null && !this.nmsInfoEventsPK.equals(other.nmsInfoEventsPK))) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "shm_bo.NmsInfoEvents[ nmsInfoEventsPK=" + nmsInfoEventsPK + " ]";
-    }
-
 }

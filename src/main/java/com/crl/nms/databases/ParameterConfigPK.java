@@ -5,6 +5,7 @@ import jakarta.persistence.Embeddable;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -21,5 +22,4 @@ public class ParameterConfigPK {
 
     @Column(name = "WIDGET_CONFIG_ID")
     private Integer widgetConfigId;
-
 }

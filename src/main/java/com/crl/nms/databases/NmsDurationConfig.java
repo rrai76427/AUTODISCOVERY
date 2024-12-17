@@ -6,6 +6,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
 
+/**
+ *
+ * @author Sneha Prajapati
+ */
 @Data
 @Getter
 @Setter

@@ -393,44 +393,77 @@ public class NeDetailPollThreadService extends Thread implements Constants {
             String ne_macStr = "";
             String nedescStr = "";
             String neHostNameStr = "";
-            short hwType = Constants.WS;
-            short hwSubType = Constants.HW_SUB_TYPE_HP;
+            Short hwType = Constants.UNKNOWN;
+            Short hwSubType = Constants.HW_SUB_TYPE_HP;
             byte neOperSys = Constants.OS_TYPE_LINUX;
 
             for (String result : liveIpList) {
-                if (result.contains("MAC Address:")) {
-                    ne_macStr = extractMacAddress(result);
-                    logger.debug("MAC Address: {}", ne_macStr);
-                }
-                if (result.contains("Service Info:")) {
-                    neOperSys = determineOperatingSystem(result);
-                    hwType = determineHardwareType(result);
-                    hwSubType = determineHardwareSubType(result);
-                }
-                if (result.contains("Device type:")) {
-                    hwType = determineDeviceType(result);
-                }
-                if (result.contains("Nmap scan report for")) {
-                    String[] data = result.split("Nmap scan report for ");
-                    neipStr = extractIpAddress(data);
-                    String[] parts = neipStr.split("\\s+|\\(|\\)");
-                    if (parts.length >= 3) {
-                        nedescStr = parts[0];
-                        neipStr = parts[2].trim();
+                try {
+                    if (result.contains("MAC Address:")) {
+                        ne_macStr = extractMacAddress(result);
+                        logger.debug("MAC Address: {}", ne_macStr);
                     }
-                    System.out.println("Hostname: " + nedescStr);
-                    System.out.println("IP Address: " + neipStr);
-                    logger.debug("Hostname: {}", nedescStr);
-                    logger.debug("IP Address: {}", neipStr);
+                    if (result.contains("Service Info:")) {
+                        neOperSys = determineOperatingSystem(result);
+                        hwType = determineHardwareType(result);
+                        hwSubType = determineHardwareSubType(result);
+                    }
+                    if (result.contains("Device type:")) {
+                        hwType = determineDeviceType(result);
+                    }
+                    if (result.contains("Nmap scan report for")) {
+                        String[] data = result.split("Nmap scan report for ");
+                        neipStr = extractIpAddress(data);
+                        String[] parts = neipStr.split("\\s+|\\(|\\)");
+                        if (parts.length >= 3) {
+                            nedescStr = parts[0];
+                            neipStr = parts[2].trim();
+                        }
+                        System.out.println("Hostname: " + nedescStr);
+                        System.out.println("IP Address: " + neipStr);
+                        logger.debug("Hostname: {}", nedescStr);
+                        logger.debug("IP Address: {}", neipStr);
+                    }
+                    if (result.contains("scanned ports")) {
+                        hwType = Constants.SWITCH;
+                    }
+                    if (result.contains("Microsoft Windows")) {
+                        System.out.println("Device Type: Microsoft Windows Device");
+                        hwType = Constants.SERVER;
+                    }
+                    if (result.contains("Juniper")) {
+                        System.out.println("Device Type: Juniper Networking Device");
+                    }
+                    if (result.contains("OpenSSH") || result.contains("SSH") || result.contains("server")) {
+                        System.out.println("Device Type: SSH Server (likely a Linux/Unix device)");
+                        hwType = Constants.SERVER;
+                    }
+                    if (result.contains("Mocana NanoSSH")) {
+                        System.out.println("Device Type: Embedded System with Mocana NanoSSH");
+                        hwType = Constants.IP_PHONE;
+                    }
+                    if (result.contains("Kerberos") || result.contains("Active Directory")) {
+                        System.out.println("Device Type: Microsoft Active Directory Server");
+                        hwType = Constants.SERVER;
+                    }
+                    if (result.contains("HTTP")) {
+                        System.out.println("Device Type: Web Server");
+                        hwType = Constants.SERVER;
+                    }
+                    if (result.contains("SNMP")) {
+                        System.out.println("Device Type: Likely a Network Device (Router/Switch)");
+                        hwType = Constants.SWITCH;
+                    }
                 }
-                if (result.contains("scanned ports")) {
-                    hwType = Constants.SWITCH;
+                catch (Exception e){
+                    System.out.println("RAVI");
+                    e.printStackTrace();
                 }
             }
 
             if (hwType == Constants.SERVER) {
                 if (nedescStr.length() == 0) {
-                    nedescStr = "SERER_" + neipStr.replace('.', '_');
+                    nedescStr = "SERVER_" + neipStr.replace('.', '_');
                 }
                 // Handle server-specific logic here
                 logger.info("Detected a server: {}", nedescStr);
@@ -452,6 +485,14 @@ public class NeDetailPollThreadService extends Thread implements Constants {
                 logger.info("Detected a switch: {}", nedescStr);
                 // You can add more server-specific processing here
             }
+            if (hwType == Constants.IP_PHONE) {
+                if (nedescStr.length() == 0) {
+                    nedescStr = "IPPHONE_" + neipStr.replace('.', '_');
+                }
+                // Handle server-specific logic here
+                logger.info("Detected a switch: {}", nedescStr);
+                // You can add more server-specific processing here
+            }
 
             if (hwType == Constants.PRINTER) {
                 if (nedescStr.length() == 0) {
@@ -461,6 +502,16 @@ public class NeDetailPollThreadService extends Thread implements Constants {
                 logger.info("Detected a printer: {}", nedescStr);
                 // You can add more server-specific processing here
             }
+            if (hwType == Constants.UNKNOWN) {
+                if (nedescStr.length() == 0) {
+                    nedescStr = "UNKNOWN_" + neipStr.replace('.', '_');
+                }
+                // Handle server-specific logic here
+                logger.info("Detected a UNKNOWN: {}", nedescStr);
+                // You can add more server-specific processing here
+            }
+
+
             if (!ne_macStr.isEmpty()) {
                 Global.ne_MAC_IP_HashMap.put(ne_macStr, neipStr);
             }
@@ -496,12 +547,42 @@ public class NeDetailPollThreadService extends Thread implements Constants {
             return Constants.SWITCH;
         } else if (result.contains("Juniper")) {
             return Constants.SWITCH;
-        } else if (result.contains("HP") && result.contains("Switch")) {
+        } else if (result.contains("HP") || result.contains("switch")) {
             return Constants.SWITCH;
-        } else if (result.contains("dell")) {
+        } else if (result.contains("dell") || result.contains("Linux") || result.contains("Windows")) {
+            return Constants.SERVER;
+        }else if (result.contains("Workstation")) {
+            return Constants.WS;
+        }
+
+
+
+      /*  else if (result.contains("Microsoft Windows")) {
+            System.out.println("Device Type: Microsoft Windows Device");
+            return Constants.SERVER;
+        } else if (result.contains("Juniper")) {
+            System.out.println("Device Type: Juniper Networking Device");
+        } else if (result.contains("OpenSSH") || result.contains("SSH")) {
+            System.out.println("Device Type: SSH Server (likely a Linux/Unix device)");
+            return Constants.SERVER;
+        } else if (result.contains("Mocana NanoSSH")) {
+            System.out.println("Device Type: Embedded System with Mocana NanoSSH");
+            return Constants.IP_PHONE;
+        } else if (result.contains("Kerberos") || result.contains("Active Directory")) {
+            System.out.println("Device Type: Microsoft Active Directory Server");
+            return Constants.SERVER;
+        } else if (result.contains("HTTP")) {
+            System.out.println("Device Type: Web Server");
             return Constants.SERVER;
         }
-        return Constants.WS; // Default value
+        else if (result.contains("SNMP")) {
+            System.out.println("Device Type: Likely a Network Device (Router/Switch)");
+            return Constants.SWITCH;
+        }*/
+       /* else {
+            System.out.println("Device Type: Unknown");
+        }*/
+        return Constants.UNKNOWN; // Default value
     }
 
     private short determineHardwareSubType(String result) {
@@ -514,6 +595,9 @@ public class NeDetailPollThreadService extends Thread implements Constants {
         } else if (result.contains("dell")) {
             return Constants.HW_SUB_TYPE_DELL;
         }
+
+
+
         return Constants.HW_SUB_TYPE_HP; // Default value
     }
 
@@ -530,7 +614,7 @@ public class NeDetailPollThreadService extends Thread implements Constants {
             case "remote management":
                 return Constants.SERVER;
             default:
-                return Constants.WS;
+                return Constants.UNKNOWN;
         }
     }
 

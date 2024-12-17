@@ -1,13 +1,13 @@
-package com.crl.nms.databases;
+package  com.crl.nms.databases;
 
+import java.io.Serializable;
+import java.util.List;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
-import java.io.Serializable;
-import java.util.List;
-
 /**
+ *
  * @author ashwinimehta
  */
 @Entity
@@ -44,8 +44,4 @@ public class NmsAlarmClassification implements Serializable {
 
     @Column(name = "CORRECTIVE_ACTION")
     private String correctiveAction;
-
-    @OneToMany(mappedBy = "alarmId")
-    private List<NmsAlarms> nmsAlarmsList;
-
 }

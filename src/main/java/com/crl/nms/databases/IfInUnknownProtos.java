@@ -11,8 +11,8 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfInUnknownProtos {
-
 
     @Id
     public IfInUnknownProtosPK ifInUnknownProtosPK;
@@ -22,8 +22,4 @@ public class IfInUnknownProtos {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfInUnknownProtos() {
-    }
 }

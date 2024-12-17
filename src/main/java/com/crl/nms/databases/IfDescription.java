@@ -11,7 +11,9 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfDescription {
+
     @Id
     public IfDescriptionPK ifDescriptionPK;
 
@@ -20,8 +22,4 @@ public class IfDescription {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfDescription() {
-    }
 }

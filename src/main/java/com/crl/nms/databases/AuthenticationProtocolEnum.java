@@ -8,12 +8,11 @@ import jakarta.transaction.Transactional;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 @Table(name = "NMS_ENUM_AUTHENTICATION_PROTOCOL")
@@ -27,6 +26,15 @@ public class AuthenticationProtocolEnum {
 
     @Column(name = "PROTOCOL")
     private String protocol;
+
+
+    public AuthenticationProtocolEnum() {
+    }
+
+    public AuthenticationProtocolEnum(Integer id, String protocol) {
+        this.id = id;
+        this.protocol = protocol;
+    }
 
     public Integer getId() {
         return id;

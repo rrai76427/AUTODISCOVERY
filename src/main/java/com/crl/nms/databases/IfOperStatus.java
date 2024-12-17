@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Entity
 @Table(name = "nms_snmp_ifoper_status")
 @Data
@@ -12,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfOperStatus {
 
     @Id
@@ -22,8 +22,4 @@ public class IfOperStatus {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfOperStatus() {
-    }
 }

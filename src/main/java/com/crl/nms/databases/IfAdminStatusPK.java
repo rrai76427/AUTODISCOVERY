@@ -3,9 +3,7 @@ package com.crl.nms.databases;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.*;
-
 import java.util.Date;
-
 
 @Data
 @AllArgsConstructor
@@ -13,6 +11,7 @@ import java.util.Date;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfAdminStatusPK {
 
     @Column(name = "nekey")
@@ -23,7 +22,4 @@ public class IfAdminStatusPK {
 
     @Column(name = "updated_on")
     private Date updatedOn;
-
-    public IfAdminStatusPK() {
-    }
 }

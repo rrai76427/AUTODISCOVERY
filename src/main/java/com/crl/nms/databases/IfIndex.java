@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfIndex {
 
     @Id
@@ -21,8 +22,4 @@ public class IfIndex {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfIndex() {
-    }
 }

@@ -1,6 +1,5 @@
 package com.crl.nms.databases;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -9,6 +8,7 @@ import jakarta.transaction.Transactional;
 import lombok.*;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 

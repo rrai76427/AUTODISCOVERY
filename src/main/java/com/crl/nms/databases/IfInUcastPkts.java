@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfInUcastPkts {
 
     @Id
@@ -21,8 +22,4 @@ public class IfInUcastPkts {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfInUcastPkts() {
-    }
 }

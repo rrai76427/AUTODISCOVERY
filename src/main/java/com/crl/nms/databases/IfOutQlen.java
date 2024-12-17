@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfOutQlen {
 
     @Id
@@ -21,8 +22,4 @@ public class IfOutQlen {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfOutQlen() {
-    }
 }

@@ -3,7 +3,6 @@ package com.crl.nms.databases;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Entity
 @Table(name = "nms_snmp_ifoutdiscards")
 @Data
@@ -12,8 +11,8 @@ import lombok.*;
 @Setter
 @Getter
 @Embeddable
+@NoArgsConstructor
 public class IfOutDiscards {
-
 
     @Id
     public IfOutDiscardsPK ifOutDiscardsPK;
@@ -23,8 +22,4 @@ public class IfOutDiscards {
 
     @Column(name = "param_value")
     private String paramValue;
-
-
-    public IfOutDiscards() {
-    }
 }

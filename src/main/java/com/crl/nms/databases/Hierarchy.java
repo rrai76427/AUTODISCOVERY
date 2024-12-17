@@ -10,6 +10,7 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 /**
+ *
  * @author Sneha Prajapati
  */
 
@@ -25,12 +26,16 @@ public class Hierarchy {
     @Id
     @Column(name = "HIERARCHY_ID")
     protected Integer hierarchyId;
-    @Column(name = "DEFAULT_FLAG")
-    protected Integer defaultFlag;
+
     @Column(name = "HIERARCHY_NAME")
     private String hierarchyName;
+
     @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "DEFAULT_FLAG")
+    protected Integer defaultFlag;
+
     @Column(name = "DESCRIPTION")
     private String description;
 
